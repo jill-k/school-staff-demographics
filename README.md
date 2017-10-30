@@ -35,22 +35,26 @@ In the 2016-2017 school year, 90.3% of Massachusetts public school staff members
 
 <h3>Data:</h3>
 
-<ul>MA Department of Elementary and Secondary Education Data:</ul>
+<u>MA Department of Elementary and Secondary Education Data:</u>
 
 We will use the following reports from the DESE website to access data from the last 5 years:
-School addresses and zip codes (to merge with Census data)
-Staff race and ethnicity by school, overall and by position
-Student race and ethnicity by school
-School attendance rates
-Percent of students suspended
-Student mobility
+<ul>
+  <li>School addresses and zip codes (to merge with Census data)</li>
+<li>Staff race and ethnicity by school, overall and by position</li>
+<li>Student race and ethnicity by school</li>
+<li>School attendance rates</li>
+<li>Percent of students suspended</li>
+<li>Student mobility</li>
+</ul>
 
-<ul>American Community Survey Data:</ul>
+<u>American Community Survey Data:</u>
 
 We will use the 2015 ACS 5-year estimates for Massachusetts zip codes to access the following data:
-B15003: EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER
-S1901: INCOME IN THE PAST 12 MONTHS (IN 2015 INFLATION-ADJUSTED DOLLARS)
-B03002: HISPANIC OR LATINO ORIGIN BY RACE
+<ul>
+  <li>B15003: EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER</li>
+  <li>S1901: INCOME IN THE PAST 12 MONTHS (IN 2015 INFLATION-ADJUSTED DOLLARS)</li>
+  <li>B03002: HISPANIC OR LATINO ORIGIN BY RACE</li>
+</ul>
 
 
 Past Research/Articles:
