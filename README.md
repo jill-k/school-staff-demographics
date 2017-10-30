@@ -19,7 +19,7 @@ In the 2016-2017 school year, 90.3% of Massachusetts public school staff members
 <li>Charter versus public (DESE) </li>
 <li>Race/ethnicity of residents in zip code (ACS)</li>
 <li>Race/ethnicity of public school students in zip code (DESE)</li>
-  <li>Median income, percent poverty, and percent bachelor’s degrees by zip code (ACS)</li></ul>
+<li>Median income, percent poverty, and percent bachelor’s degrees by zip code (ACS)</li></ul>
 <li>Are there differences in key measures of student success based on staff demographics? To explore this question, we will compare groups of schools with similar student enrollment and different staff demographics and examine the below measures:<ul></li>
   <li>Attendance rates (DESE)</li>
   <li>Student mobility rates (DESE)</li>
@@ -39,7 +39,8 @@ In the 2016-2017 school year, 90.3% of Massachusetts public school staff members
 
 We will use the following reports from the DESE website to access data from the last 5 years:
 <ul>
-  <li>School addresses and zip codes (to merge with Census data)</li>
+<li><a href="http://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238">
+  School addresses and zip codes (to merge with Census data)</a></li>
 <li>Staff race and ethnicity by school, overall and by position</li>
 <li>Student race and ethnicity by school</li>
 <li>School attendance rates</li>
@@ -49,8 +50,8 @@ We will use the following reports from the DESE website to access data from the 
 
 <b>American Community Survey Data:</b>
 
-We will use the <a href="https://www.census.gov/data/developers/data-sets/acs-5year.html" target="_blank">
-  2015 ACS 5-year estimates</a> for Massachusetts zip codes to access the following data:
+We will use the <a href="https://www.census.gov/data/developers/data-sets/acs-5year.html">
+2015 ACS 5-year estimates</a> for Massachusetts zip codes to access the following data:
 <ul>
   <li>B15003: EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER</li>
   <li>S1901: INCOME IN THE PAST 12 MONTHS (IN 2015 INFLATION-ADJUSTED DOLLARS)</li>
