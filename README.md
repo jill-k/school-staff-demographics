@@ -14,13 +14,13 @@ In the 2016-2017 school year, 90.3% of Massachusetts public school staff members
 <li>What is the breakdown of staff race/ethnicity within the following school employee roles in Massachusetts: principal, administrator, teacher, and support staff? (DESE)</li>
 <li>Is there a correlation between the percent of non-white students and percent of non-white staff (in general and by groups mentioned above) in Massachusetts schools? (DESE)</li>
 <li>Do schools with the highest percentages of non-white staff members have shared characteristics? We would like to examine the following:<ul></li>
-<li>Principal and administrator race/ethnicity (DESE)</li>
-<li>Grade levels served (DESE)</li>
-<li>Charter versus public (DESE) </li>
-<li>Race/ethnicity of residents in zip code (ACS)</li>
-<li>Race/ethnicity of public school students in zip code (DESE)</li>
-<li>Median income, percent poverty, and percent bachelor’s degrees by zip code (ACS)</li></ul>
-<li>Are there differences in key measures of student success based on staff demographics? To explore this question, we will compare groups of schools with similar student enrollment and different staff demographics and examine the below measures:<ul></li>
+  <li>Principal and administrator race/ethnicity (DESE)</li>
+  <li>Grade levels served (DESE)</li>
+  <li>Charter versus public (DESE) </li>
+  <li>Race/ethnicity of residents in zip code (ACS)</li>
+  <li>Race/ethnicity of public school students in zip code (DESE)</li>
+  <li>Median income, percent poverty, and percent bachelor’s degrees by zip code (ACS)</li></ul>
+  <li>Are there differences in key measures of student success based on staff demographics? To explore this question, we will compare groups of schools with similar student enrollment and different staff demographics and examine the below measures:<ul></li>
   <li>Attendance rates (DESE)</li>
   <li>Student mobility rates (DESE)</li>
   <li>Suspension rates (DESE)</li>
@@ -41,11 +41,16 @@ We will use the following reports from the DESE website to access data from the 
 <ul>
 <li><a href="http://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238">
   School addresses and zip codes (to merge with Census data)</a></li>
-<li>Staff race and ethnicity by school, overall and by position</li>
-<li>Student race and ethnicity by school</li>
-<li>School attendance rates</li>
-<li>Percent of students suspended</li>
-<li>Student mobility</li>
+<li><a href="http://profiles.doe.mass.edu/state_report/teacherbyracegender.aspx">
+  Staff race and ethnicity by school, overall and by position</a></li>
+<li><a href="http://profiles.doe.mass.edu/state_report/enrollmentbyracegender.aspx">
+  Student race and ethnicity by school</a></li>
+<li><a href="http://profiles.doe.mass.edu/statereport/indicators.aspx">
+  School attendance rates</a></li>
+<li><a href="http://profiles.doe.mass.edu/state_report/ssdr.aspx">
+  Percent of students suspended<a/></li>
+<li><a href="http://profiles.doe.mass.edu/state_report/mobilityrates.aspx">
+  Student mobility</a></li>
 </ul>
 
 <b>American Community Survey Data:</b>
