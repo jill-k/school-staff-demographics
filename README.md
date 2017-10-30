@@ -49,7 +49,7 @@ We will use the following reports from the DESE website to access data from the 
 
 <b>American Community Survey Data:</b>
 
-<hidden>a=https://www.census.gov/data/developers/data-sets/acs-5year.html</hidden>
+<p hidden>a=https://www.census.gov/data/developers/data-sets/acs-5year.html</p>
 
 We will use the <a href=a>2015 ACS 5-year estimates</a> for Massachusetts zip codes to access the following data:
 <ul>
@@ -69,4 +69,9 @@ We will use the <a href=a>2015 ACS 5-year estimates</a> for Massachusetts zip co
 <li>https://www.bostonglobe.com/metro/2017/02/12/mass-students-are-increasingly-diverse-but-their-teachers-are-not/fiwxsW4sJCdCz4wZEjLYpL/story.html</li>
 <li>http://www.nber.org/papers/w8432.pdf</li>
 <li>http://ftp.iza.org/dp10630.pdf</li>
+</ul>
+
+<h3>Embedded Links:</h3>
+<ul>
+<li>a=https://www.census.gov/data/developers/data-sets/acs-5year.html</li>
 </ul>
