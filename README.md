@@ -35,7 +35,7 @@ In the 2016-2017 school year, 90.3% of Massachusetts public school staff members
 
 <h3>Data:</h3>
 
-<em>MA Department of Elementary and Secondary Education Data:</em>
+<b>MA Department of Elementary and Secondary Education Data:</b>
 
 We will use the following reports from the DESE website to access data from the last 5 years:
 <ul>
@@ -47,7 +47,7 @@ We will use the following reports from the DESE website to access data from the 
 <li>Student mobility</li>
 </ul>
 
-<em>American Community Survey Data:</em>
+<b>American Community Survey Data:</b>
 
 We will use the 2015 ACS 5-year estimates for Massachusetts zip codes to access the following data:
 <ul>
