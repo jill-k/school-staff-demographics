@@ -35,7 +35,7 @@ In the 2016-2017 school year, 90.3% of Massachusetts public school staff members
 
 <h3>Data:</h3>
 
-<u>MA Department of Elementary and Secondary Education Data:</u>
+<em>MA Department of Elementary and Secondary Education Data:</em>
 
 We will use the following reports from the DESE website to access data from the last 5 years:
 <ul>
@@ -47,7 +47,7 @@ We will use the following reports from the DESE website to access data from the 
 <li>Student mobility</li>
 </ul>
 
-<u>American Community Survey Data:</u>
+<em>American Community Survey Data:</em>
 
 We will use the 2015 ACS 5-year estimates for Massachusetts zip codes to access the following data:
 <ul>
@@ -57,7 +57,7 @@ We will use the 2015 ACS 5-year estimates for Massachusetts zip codes to access 
 </ul>
 
 
-Past Research/Articles:
+<h3>Past Research/Articles:</h3>
 <ul>
   <li>https://www.theatlantic.com/education/archive/2016/06/principals-of-color/488006/</li>
 <li>https://www.theatlantic.com/education/archive/2015/09/teacher-diversity-viz/406033/</li>
