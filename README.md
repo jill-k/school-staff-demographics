@@ -42,7 +42,7 @@ In the 2016-2017 school year, 90.3% of Massachusetts public school staff members
 We will use the following reports from the DESE website to access data from the last 5 years:
 <ul>
 <li><a href="http://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238">
-  School addresses and zip codes (to merge with Census data)</a></li>
+  School addresses and zip codes (to merge with ACS data)</a></li>
 <li><a href="http://profiles.doe.mass.edu/state_report/teacherbyracegender.aspx">
   Staff race and ethnicity by school, overall and by position</a></li>
 <li><a href="http://profiles.doe.mass.edu/state_report/enrollmentbyracegender.aspx">
