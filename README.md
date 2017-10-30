@@ -49,7 +49,8 @@ We will use the following reports from the DESE website to access data from the 
 
 <b>American Community Survey Data:</b>
 
-We will use the <a href=a>2015 ACS 5-year estimates</a> for Massachusetts zip codes to access the following data:
+We will use the <a href=https://www.census.gov/data/developers/data-sets/acs-5year.html>
+  2015 ACS 5-year estimates</a> for Massachusetts zip codes to access the following data:
 <ul>
   <li>B15003: EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER</li>
   <li>S1901: INCOME IN THE PAST 12 MONTHS (IN 2015 INFLATION-ADJUSTED DOLLARS)</li>
@@ -67,9 +68,4 @@ We will use the <a href=a>2015 ACS 5-year estimates</a> for Massachusetts zip co
 <li>https://www.bostonglobe.com/metro/2017/02/12/mass-students-are-increasingly-diverse-but-their-teachers-are-not/fiwxsW4sJCdCz4wZEjLYpL/story.html</li>
 <li>http://www.nber.org/papers/w8432.pdf</li>
 <li>http://ftp.iza.org/dp10630.pdf</li>
-</ul>
-
-<h3>Embedded Links:</h3>
-<ul>
-<li>a=https://www.census.gov/data/developers/data-sets/acs-5year.html</li>
 </ul>
