@@ -1,5 +1,7 @@
 # school-staff-demographics
 
+Ziv Schwartz & Jill Kahane
+
 <h1>Final Project Proposal</h1>
 
 <h3>Background:</h3>
