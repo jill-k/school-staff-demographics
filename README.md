@@ -7,7 +7,7 @@ We used Jupyter notebooks to check out our data and conduct our analysis.
 
 <h3>Links to Data</h3>
 
-We used data from the Massachusetts Department of Secondary and Elementary Education (DESE) website and the American Community Survey (ACS). We original planned to use data through the 2015-2016 school year, but we found that Boston did not submit staff race and ethnicity data in 2016. Since Boston played such a large role in our analysis, we explored six years of data, from the 2009-2010 school year to the 2014-2015 school year.
+We used data from the Massachusetts Department of Secondary and Elementary Education (DESE) website and the American Community Survey (ACS). We originally planned to use data through the 2015-2016 school year, but we found that Boston did not report staff race and ethnicity data in 2016. Since we anticipated that Boston would play a large role in our analysis, we used data from the school years 2009-2010 to 2014-2015 instead.
 
 We used BeautifulSoup, requests, and pandas to download and process our data from the DESE website and the API to access data that we wanted from the ACS.  The master .csv file for each report can be found on GitHub in the student, staff, and acs folders, as we used only these files in our analysis. We did not commit the initial files that we downloaded.
 
@@ -16,7 +16,7 @@ The staff race/ethnicity master file required the most processing in the checkou
 <li>Staff Race/Ethnicity</li>
 </ul>
 
-We used a very similar checkout process for all of the report listed below:
+We used a similar checkout process for all of the reports listed below:
 <ul>
 <li>Student Race/Ethnicity</li>
 <li>School Addresses</li>
@@ -32,13 +32,13 @@ We were unable to download the updated school-wide attendance report from the DE
 
 For the ACS data, we used the API to create a master dataframe of zip-code level data for variables of interest.
 <ul>
-<li>ACS Checkout</li>
+<li><a href="https://github.com/jill-k/school-staff-demographics/blob/master/acs/ACS%20Data%20Checkout.ipynb">ACS Checkout</a></li>
 </ul>
 
 
 <h3>Link to Analysis</h3>
 
-We focused our analysis on Questions 1-3 in our project proposal. 
+We focused our analysis on Questions 1-3 in our project proposal.
 
 <h1>Final Project Proposal</h1>
 
