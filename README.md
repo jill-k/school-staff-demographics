@@ -2,13 +2,16 @@
 
 Ziv Schwartz & Jill Kahane
 
+<h1>Links to Data</h1>
+<h1>Link to Analysis</h>
+
 <h1>Final Project Proposal</h1>
 
 <h3>Background:</h3>
 
 There is a growing body of research about how a diverse teaching staff benefits all students and can have particularly important impact on students of color (<a href="http://www.nber.org/papers/w8432.pdf">TS. Dee, 2001</a>; <a href="http://research.upjohn.org/cgi/viewcontent.cgi?article=1248&context=up_workingpapers">S. Gershenson, 2015</a>; <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.455.7083&rep=rep1&type=pdf">T. Pettigrew, 2006</a>). However, while the number of non-white public school students is increasing across the country, <a href="http://www.shankerinstitute.org/sites/shanker/files/The%20State%20of%20Teacher%20Diversity%20%283%29_0.pdf">the number of non-white teachers and principals is not</a>.
 
-In the 2016-2017 school year, 90.3% of Massachusetts public school staff members reported as white while only 61.3% of students enrolled in Massachusetts public schools reported as white. We would like to use Massachusetts Department of Elementary and Secondary Education (DESE) and American Community Survey (ACS) data to investigate the following questions about school staff demographics in traditional public and charter schools. The comparison to charter schools will allow us to further our understanding of the issue. 
+In the 2016-2017 school year, 90.3% of Massachusetts public school staff members reported as white while only 61.3% of students enrolled in Massachusetts public schools reported as white. We would like to use Massachusetts Department of Elementary and Secondary Education (DESE) and American Community Survey (ACS) data to investigate the following questions about school staff demographics in traditional public and charter schools. The comparison to charter schools will allow us to further our understanding of the issue.
 
 <h3>Questions:</h3>
 
