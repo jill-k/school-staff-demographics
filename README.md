@@ -5,7 +5,14 @@ Ziv Schwartz & Jill Kahane
 <h1>Final Project</h1>
 We used Jupyter notebooks to check out our data and conduct our analysis. All files are linked below, and can be found with our master data files in the student, staff, acs, and analysis folders.
 
-<h3>Links to Data</h3>
+<h3>Link to Analysis</h3>
+
+We focused on Questions 1-3 in our project proposal, and our analysis can be found at the link below.
+<ul>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Staff%20Analysis.ipynb">School Staff Analysis</a></li>
+</ul>
+
+<h3>Data Checkout Details</h3>
 
 We used data from the Massachusetts Department of Secondary and Elementary Education (DESE) website and the American Community Survey (ACS). We originally planned to use data through the 2015-2016 school year, but we found that Boston did not report staff race and ethnicity data in 2016. Since we anticipated that Boston would play a large role in our analysis, we used data from the school years 2009-2010 to 2014-2015 instead.
 
@@ -35,13 +42,6 @@ For the ACS data, we used the API to create a master dataframe of zip-code level
 <li><a href="https://github.com/jill-k/school-staff-demographics/blob/master/acs/ACS%20Data%20Checkout.ipynb">ACS Checkout</a></li>
 </ul>
 
-
-<h3>Link to Analysis</h3>
-
-We focused our analysis on Questions 1-3 in our project proposal
-<ul>
-<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Staff%20Analysis.ipynb">School Staff Analysis</a></li>
-</ul>
 
 <h1>Final Project Proposal</h1>
 
