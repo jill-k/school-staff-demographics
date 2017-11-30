@@ -2,8 +2,43 @@
 
 Ziv Schwartz & Jill Kahane
 
-<h1>Links to Data</h1>
-<h1>Link to Analysis</h>
+<h1>Final Project</h1>
+We used Jupyter notebooks to check out our data and conduct our analysis.
+
+<h3>Links to Data</h3>
+
+We used data from the Massachusetts Department of Secondary and Elementary Education (DESE) website and the American Community Survey (ACS). We original planned to use data through the 2015-2016 school year, but we found that Boston did not submit staff race and ethnicity data in 2016. Since Boston played such a large role in our analysis, we explored six years of data, from the 2009-2010 school year to the 2014-2015 school year.
+
+We used BeautifulSoup, requests, and pandas to download and process our data from the DESE website and the API to access data that we wanted from the ACS.  The master .csv file for each report can be found on GitHub in the student, staff, and acs folders, as we used only these files in our analysis. We did not commit the initial files that we downloaded.
+
+The staff race/ethnicity master file required the most processing in the checkout stage, as we knew we wanted to conduct our analysis by job category (e.g. Teacher, School Leader, Administrative Support) instead of by the 65 distinct job codes.
+<ul>
+<li>Staff Race/Ethnicity</li>
+</ul>
+
+We used a very similar checkout process for all of the report listed below:
+<ul>
+<li>Student Race/Ethnicity</li>
+<li>School Addresses</li>
+<li>Student Enrollment</li>
+<li>Student Mobility Indicators</li>
+<li>Student Suspension Indicators</li>
+</ul>
+
+We were unable to download the updated school-wide attendance report from the DESE website, so we had to download this data by looping through individual school sites and extracting the attendance indicators we needed from the HTML.
+<ul>
+<li>Student Attendance Indicators</li>
+</ul>
+
+For the ACS data, we used the API to create a master dataframe of zip-code level data for variables of interest.
+<ul>
+<li>ACS Checkout</li>
+</ul>
+
+
+<h3>Link to Analysis</h3>
+
+We focused our analysis on Questions 1-3 in our project proposal. 
 
 <h1>Final Project Proposal</h1>
 
