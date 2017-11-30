@@ -3,7 +3,7 @@
 Ziv Schwartz & Jill Kahane
 
 <h1>Final Project</h1>
-We used Jupyter notebooks to check out our data and conduct our analysis.
+We used Jupyter notebooks to check out our data and conduct our analysis. All files are linked below, and can be found with our master data files in the student, staff, acs, and analysis folders.
 
 <h3>Links to Data</h3>
 
@@ -13,21 +13,21 @@ We used BeautifulSoup, requests, and pandas to download and process our data fro
 
 The staff race/ethnicity master file required the most processing in the checkout stage, as we knew we wanted to conduct our analysis by job category (e.g. Teacher, School Leader, Administrative Support) instead of by the 65 distinct job codes.
 <ul>
-<li>Staff Race/Ethnicity</li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/staff_data/Checkout%20-%20Staff%20Demo%20Data.ipynb"> Staff Race/Ethnicity</a></li>
 </ul>
 
 We used a similar checkout process for all of the reports listed below:
 <ul>
-<li>Student Race/Ethnicity</li>
-<li>School Addresses</li>
-<li>Student Enrollment</li>
-<li>Student Mobility Indicators</li>
-<li>Student Suspension Indicators</li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20Student%20Race%20and%20Ethnicity%20Data.ipynb">Student Race/Ethnicity</a></li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20School%20Addresses.ipynb">School Addresses</a></li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20Student%20Enrollment.ipynb">Student Enrollment</a></li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20Student%20Mobility.ipynb">Student Mobility Indicators</a></li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20Student%20Suspension%20Data.ipynb">Student Suspension Indicators</a></li>
 </ul>
 
 We were unable to download the updated school-wide attendance report from the DESE website, so we had to download this data by looping through individual school sites and extracting the attendance indicators we needed from the HTML.
 <ul>
-<li>Student Attendance Indicators</li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20Student%20Attendance.ipynb">Student Attendance Indicators</a></li>
 </ul>
 
 For the ACS data, we used the API to create a master dataframe of zip-code level data for variables of interest.
@@ -38,7 +38,10 @@ For the ACS data, we used the API to create a master dataframe of zip-code level
 
 <h3>Link to Analysis</h3>
 
-We focused our analysis on Questions 1-3 in our project proposal.
+We focused our analysis on Questions 1-3 in our project proposal
+<ul>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Staff%20Analysis.ipynb">School Staff Analysis</a></li>
+</ul>
 
 <h1>Final Project Proposal</h1>
 
