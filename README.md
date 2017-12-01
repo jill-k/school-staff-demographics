@@ -7,10 +7,12 @@ We used Jupyter notebooks to check out our data and conduct our analysis. All fi
 
 <h3>Link to Analysis</h3>
 
-We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the link below:
+We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the first link below. The second link contains code used to generate a Folium map that plots all schools with >90% students of color with information about staff demographics.
 <ul>
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Staff%20Analysis.ipynb">School Staff Analysis</a></li>
+<li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Map.ipynb">School Map</a></li>
 </ul>
+
 
 <h3>Data Checkout Details</h3>
 
