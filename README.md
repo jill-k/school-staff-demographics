@@ -3,11 +3,11 @@
 Ziv Schwartz & Jill Kahane
 
 <h1>Final Project</h1>
-We used Jupyter notebooks to check out our data and conduct our analysis. All files are linked below, and can be found with our master data files in the student, staff, acs, and analysis folders.
+We used Jupyter notebooks to check out our data and conduct our analysis. All files are linked below, or can be found with our master data files in the student, staff, acs, and analysis folders.
 
 <h3>Link to Analysis</h3>
 
-We focused on Questions 1-3 in our project proposal, and our analysis can be found at the link below.
+We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the link below:
 <ul>
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Staff%20Analysis.ipynb">School Staff Analysis</a></li>
 </ul>
