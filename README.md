@@ -5,7 +5,7 @@ Ziv Schwartz & Jill Kahane
 <h1>Final Project</h1>
 Our project focuses on staff demographics in public K-12 schools in Massachusetts. We used Jupyter notebooks to check out our data and conduct our analysis. All notebooks are linked below, and can be found with our master data files in the student, staff, acs, and analysis folders.
 
-<h3>Link to Analysis</h3>
+<h3>Analysis</h3>
 
 We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the first link below. The second link contains code used to generate a Folium map that plots the 163 schools in Massachusetts with >90% students of color with information about staff demographics. A direct link to the map can be found <a href = "https://jill-k.github.io/school-staff-demographics/">here</a>.
 <ul>
