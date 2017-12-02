@@ -3,11 +3,11 @@
 Ziv Schwartz & Jill Kahane
 
 <h1>Final Project</h1>
-Our project focused on school staff demographics in public K-12 schools in Massachusetts. We used Jupyter notebooks to check out our data and conduct our analysis. All files are linked below, or can be found with our master data files in the student, staff, acs, and analysis folders.
+Our project focused on school staff demographics in public K-12 schools in Massachusetts. We used Jupyter notebooks to check out our data and conduct our analysis. All notebooks are linked below, and can be found with our master data files in the student, staff, acs, and analysis folders.
 
 <h3>Link to Analysis</h3>
 
-We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the first link below. The second link contains code used to generate a Folium map that plots all schools in Massachusetts with >90% students of color with information about staff demographics. A direct link to the map can be found <a href = "https://jill-k.github.io/school-staff-demographics/">here</a>.
+We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the first link below. The second link contains code used to generate a Folium map that plots the 163 schools in Massachusetts with >90% students of color with information about staff demographics. A direct link to the map can be found <a href = "https://jill-k.github.io/school-staff-demographics/">here</a>.
 <ul>
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Staff%20Analysis.ipynb">School Staff Analysis</a></li>
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Map.ipynb">School Map</a></li>
@@ -18,7 +18,7 @@ We focused our analysis on the four questions outlined in our final project prop
 
 We used data from the Massachusetts Department of Secondary and Elementary Education (DESE) website and the American Community Survey (ACS). We originally planned to use data through the 2015-2016 school year, but we found that Boston did not report staff race and ethnicity data in 2016. Since we anticipated that Boston would play a large role in our analysis, we used data from the school years 2009-2010 to 2014-2015 instead.
 
-We used BeautifulSoup, requests, and pandas to download and process our data from the DESE website and the API to access data that we wanted from the ACS.  The master .csv file for each report can be found on GitHub in the student, staff, and acs folders, as we used only these files in our analysis. We did not commit the initial files that we downloaded.
+We used BeautifulSoup, requests, and pandas to download and process our data from the DESE website and the API to access the data that we wanted from the ACS. The master .csv file for each report can be found on GitHub in the student, staff, and acs folders, as we used only these files in our analysis. We did not commit the initial files that we downloaded.
 
 The staff race/ethnicity master file required the most processing in the checkout stage, as we knew we wanted to conduct our analysis by job category (e.g. Teacher, School Leader, Administrative Support) instead of by the 65 distinct job codes.
 <ul>
@@ -34,7 +34,7 @@ We used a similar checkout process for all of the reports listed below:
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20Student%20Suspension%20Data.ipynb">Student Suspension Indicators</a></li>
 </ul>
 
-We were unable to download the updated school-wide attendance report from the DESE website, so we had to download this data by looping through individual school sites and extracting the attendance indicators we needed from the HTML.
+We were unable to download the updated school-wide attendance report from the DESE website, so we had to download this data by looping through individual school profile pages and extracting the attendance indicators we needed from the HTML.
 <ul>
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/student_data/Checkout%20-%20Student%20Attendance.ipynb">Student Attendance Indicators</a></li>
 </ul>
