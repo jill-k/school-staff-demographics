@@ -7,7 +7,7 @@ Our project focuses on staff demographics in public K-12 schools in Massachusett
 
 <h3>Analysis</h3>
 
-We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the first link below. The second link contains code used to generate a Folium map that plots the 163 schools in Massachusetts with >90% students of color with information about staff demographics. A direct link to the map can be found <a href = "https://jill-k.github.io/school-staff-demographics/">here</a>.
+We focused our analysis on the four questions outlined in our final project proposal. Our investigation can be found at the first link below. The second link contains code used to generate a Folium map that plots the 163 schools in Massachusetts with >90% students of color in 2015 with information about staff demographics. A direct link to the map can be found <a href = "https://jill-k.github.io/school-staff-demographics/">here</a>.
 <ul>
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Staff%20Analysis.ipynb">School Staff Analysis</a></li>
 <li><a href = "https://github.com/jill-k/school-staff-demographics/blob/master/analysis/School%20Map.ipynb">School Map Creation</a></li>
