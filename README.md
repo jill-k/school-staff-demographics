@@ -3,7 +3,7 @@
 Ziv Schwartz & Jill Kahane
 
 <h1>Final Project</h1>
-We used Jupyter notebooks to check out our data and conduct our analysis. All files are linked below, or can be found with our master data files in the student, staff, acs, and analysis folders.
+Our project focused on school staff demographics in public K-12 schools in Massachusetts. We used Jupyter notebooks to check out our data and conduct our analysis. All files are linked below, or can be found with our master data files in the student, staff, acs, and analysis folders.
 
 <h3>Link to Analysis</h3>
 
