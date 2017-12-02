@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head>    
+<head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    
+
             <style> #map_20fbb25887674e26879b8219e0cf3e49 {
                 position : relative;
                 width : 100.0%;
@@ -23,19 +23,22 @@
                 top: 0.0%;
                 }
             </style>
-        
-</head>
-<body>    
-    
-            <div class="folium-map" id="map_20fbb25887674e26879b8219e0cf3e49" ></div>
-        
-</body>
-<script>    
-    
 
-            
+</head>
+<body>
+  <h3>Massachusetts Schools with >90% Students of Color</h3>
+  <h5> Schools are color-coded by their percentage of staff members of color. Schools with 0-20% staff members of
+  color are red, 20-40% are orange, 40-60% are yellow, and >60% are green.</h5>
+  <h5> Click on a circle to display a school's name and additional details about staff demographics.</h5>
+            <div class="folium-map" id="map_20fbb25887674e26879b8219e0cf3e49" ></div>
+
+</body>
+<script>
+
+
+
                 var bounds = null;
-            
+
 
             var map_20fbb25887674e26879b8219e0cf3e49 = L.map(
                                   'map_20fbb25887674e26879b8219e0cf3e49',
@@ -46,9 +49,9 @@
                                   worldCopyJump: false,
                                   crs: L.CRS.EPSG3857
                                  });
-            
-        
-    
+
+
+
             var tile_layer_cbd89899f5b14217b680961834ca3738 = L.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
                 {
@@ -60,8 +63,8 @@
   "subdomains": "abc"
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-        
-    
+
+
             var circle_marker_af888ca29b1449e5848d5d4fcd21668b = L.circleMarker(
                 [42.20262,-72.60086],
                 {
@@ -81,20 +84,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d3424bd8b998416baa4a10c063b63c5c = L.popup({maxWidth: '300'});
 
-            
+
                 var html_77061f20bc504d01b5faf1786c10913d = $('<div id="html_77061f20bc504d01b5faf1786c10913d" style="width: 100.0%; height: 100.0%;">Holyoke: Kelly Elementary (Percent Staff Members of Color: 24.7% | School Leader of Color? False)</div>')[0];
                 popup_d3424bd8b998416baa4a10c063b63c5c.setContent(html_77061f20bc504d01b5faf1786c10913d);
-            
+
 
             circle_marker_af888ca29b1449e5848d5d4fcd21668b.bindPopup(popup_d3424bd8b998416baa4a10c063b63c5c);
 
-            
-        
-    
+
+
+
             var circle_marker_9ac5b10c3e774f948c769f8abdfd3a91 = L.circleMarker(
                 [42.196575,-72.60774],
                 {
@@ -114,20 +117,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_6ca95b18eaf449dc9456bfd134766df9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_0ddc8867bb4b4d0d94fc5de05497c05d = $('<div id="html_0ddc8867bb4b4d0d94fc5de05497c05d" style="width: 100.0%; height: 100.0%;">Holyoke: Morgan Full Service Community School (Percent Staff Members of Color: 23.9% | School Leader of Color? True)</div>')[0];
                 popup_6ca95b18eaf449dc9456bfd134766df9.setContent(html_0ddc8867bb4b4d0d94fc5de05497c05d);
-            
+
 
             circle_marker_9ac5b10c3e774f948c769f8abdfd3a91.bindPopup(popup_6ca95b18eaf449dc9456bfd134766df9);
 
-            
-        
-    
+
+
+
             var circle_marker_9985a85315a94d7f8e147f7de5b7cac1 = L.circleMarker(
                 [42.196697,-72.63068],
                 {
@@ -147,20 +150,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_cab8801c9c964c41ac871183ea001d9d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b508d02959674197a32c5d921ac9ed4e = $('<div id="html_b508d02959674197a32c5d921ac9ed4e" style="width: 100.0%; height: 100.0%;">Holyoke: William R. Peck School (Percent Staff Members of Color: 35.3% | School Leader of Color? True)</div>')[0];
                 popup_cab8801c9c964c41ac871183ea001d9d.setContent(html_b508d02959674197a32c5d921ac9ed4e);
-            
+
 
             circle_marker_9985a85315a94d7f8e147f7de5b7cac1.bindPopup(popup_cab8801c9c964c41ac871183ea001d9d);
 
-            
-        
-    
+
+
+
             var circle_marker_5d1c2ac136d9453abafca1644f9115b9 = L.circleMarker(
                 [42.184185,-72.626724],
                 {
@@ -180,20 +183,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b411c6ba7fbf47a1ab93b12ff15f3f64 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a9d8863614a84961b64935199e55b50c = $('<div id="html_a9d8863614a84961b64935199e55b50c" style="width: 100.0%; height: 100.0%;">Holyoke: Wm J Dean Vocational Technical High (Percent Staff Members of Color: 25.9% | School Leader of Color? True)</div>')[0];
                 popup_b411c6ba7fbf47a1ab93b12ff15f3f64.setContent(html_a9d8863614a84961b64935199e55b50c);
-            
+
 
             circle_marker_5d1c2ac136d9453abafca1644f9115b9.bindPopup(popup_b411c6ba7fbf47a1ab93b12ff15f3f64);
 
-            
-        
-    
+
+
+
             var circle_marker_f6e3a62e13b2481d8ea226d8e8a18dd9 = L.circleMarker(
                 [42.187336,-72.63003],
                 {
@@ -213,20 +216,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b0041ca4d67145eea3649f94b9118b4d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b7f86a62113f4f4bb575de15da426350 = $('<div id="html_b7f86a62113f4f4bb575de15da426350" style="width: 100.0%; height: 100.0%;">Holyoke Community Charter (District): Holyoke Community Charter School (Percent Staff Members of Color: 34.6% | School Leader of Color? True)</div>')[0];
                 popup_b0041ca4d67145eea3649f94b9118b4d.setContent(html_b7f86a62113f4f4bb575de15da426350);
-            
+
 
             circle_marker_f6e3a62e13b2481d8ea226d8e8a18dd9.bindPopup(popup_b0041ca4d67145eea3649f94b9118b4d);
 
-            
-        
-    
+
+
+
             var circle_marker_19e671833a0149bca71a4d132c768459 = L.circleMarker(
                 [42.203648,-72.61374],
                 {
@@ -246,20 +249,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_8a8b8cae324346188e1861395aca9f67 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_93022eb1c2f94535aeea6503a6d0e42c = $('<div id="html_93022eb1c2f94535aeea6503a6d0e42c" style="width: 100.0%; height: 100.0%;">Holyoke: H.B. Lawrence School (Percent Staff Members of Color: 29.7% | School Leader of Color? False)</div>')[0];
                 popup_8a8b8cae324346188e1861395aca9f67.setContent(html_93022eb1c2f94535aeea6503a6d0e42c);
-            
+
 
             circle_marker_19e671833a0149bca71a4d132c768459.bindPopup(popup_8a8b8cae324346188e1861395aca9f67);
 
-            
-        
-    
+
+
+
             var circle_marker_343f1084aa3f4cf4a750f6ee83492508 = L.circleMarker(
                 [42.120754,-72.5867],
                 {
@@ -279,20 +282,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_23ecf1a231c64b27a1df6b222b7d1752 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_bd5b54c9c1d542499d4bfd9ec917f88e = $('<div id="html_bd5b54c9c1d542499d4bfd9ec917f88e" style="width: 100.0%; height: 100.0%;">Springfield: Edward P. Boland School (Percent Staff Members of Color: 5.8% | School Leader of Color? True)</div>')[0];
                 popup_23ecf1a231c64b27a1df6b222b7d1752.setContent(html_bd5b54c9c1d542499d4bfd9ec917f88e);
-            
+
 
             circle_marker_343f1084aa3f4cf4a750f6ee83492508.bindPopup(popup_23ecf1a231c64b27a1df6b222b7d1752);
 
-            
-        
-    
+
+
+
             var circle_marker_5b8e5360ef4447c1b2ae2a23953aa38c = L.circleMarker(
                 [42.098984,-72.56421],
                 {
@@ -312,20 +315,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_62085488f54f46168a13e07740d58977 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_7eb7d350a08242aaaeced69a9a724ea0 = $('<div id="html_7eb7d350a08242aaaeced69a9a724ea0" style="width: 100.0%; height: 100.0%;">Springfield: Elias Brookings (Percent Staff Members of Color: 14.6% | School Leader of Color? True)</div>')[0];
                 popup_62085488f54f46168a13e07740d58977.setContent(html_7eb7d350a08242aaaeced69a9a724ea0);
-            
+
 
             circle_marker_5b8e5360ef4447c1b2ae2a23953aa38c.bindPopup(popup_62085488f54f46168a13e07740d58977);
 
-            
-        
-    
+
+
+
             var circle_marker_f5d1b128377643eda31b872094478ebd = L.circleMarker(
                 [42.10636,-72.57994],
                 {
@@ -345,20 +348,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_122414ff06ef425b92607b9c7fda769b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ad97d58d946c4f978c11cb5a01b92db3 = $('<div id="html_ad97d58d946c4f978c11cb5a01b92db3" style="width: 100.0%; height: 100.0%;">Springfield: High School Of Commerce (Percent Staff Members of Color: 15.7% | School Leader of Color? True)</div>')[0];
                 popup_122414ff06ef425b92607b9c7fda769b.setContent(html_ad97d58d946c4f978c11cb5a01b92db3);
-            
+
 
             circle_marker_f5d1b128377643eda31b872094478ebd.bindPopup(popup_122414ff06ef425b92607b9c7fda769b);
 
-            
-        
-    
+
+
+
             var circle_marker_810d2f7133f741f48a116e6f571da56a = L.circleMarker(
                 [42.100887,-72.57981],
                 {
@@ -378,20 +381,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_8b0608e6ec8748fa8f5005a79e1ac285 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b3966d2bc91c49e0bd720fb17cb342de = $('<div id="html_b3966d2bc91c49e0bd720fb17cb342de" style="width: 100.0%; height: 100.0%;">Springfield: Milton Bradley School (Percent Staff Members of Color: 17.2% | School Leader of Color? False)</div>')[0];
                 popup_8b0608e6ec8748fa8f5005a79e1ac285.setContent(html_b3966d2bc91c49e0bd720fb17cb342de);
-            
+
 
             circle_marker_810d2f7133f741f48a116e6f571da56a.bindPopup(popup_8b0608e6ec8748fa8f5005a79e1ac285);
 
-            
-        
-    
+
+
+
             var circle_marker_558689e961294e8e923f9648af015b94 = L.circleMarker(
                 [42.09677,-72.58347],
                 {
@@ -411,20 +414,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_71a417f18b4d4a5c85c0ab432551f74a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_9eb72ebd00534608ad42ab597c8f5913 = $('<div id="html_9eb72ebd00534608ad42ab597c8f5913" style="width: 100.0%; height: 100.0%;">Springfield: South End Middle School (Percent Staff Members of Color: 12.4% | School Leader of Color? True)</div>')[0];
                 popup_71a417f18b4d4a5c85c0ab432551f74a.setContent(html_9eb72ebd00534608ad42ab597c8f5913);
-            
+
 
             circle_marker_558689e961294e8e923f9648af015b94.bindPopup(popup_71a417f18b4d4a5c85c0ab432551f74a);
 
-            
-        
-    
+
+
+
             var circle_marker_6cc164d890f543e3a98eac6d022d0e7f = L.circleMarker(
                 [42.09463,-72.574425],
                 {
@@ -444,20 +447,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_ff41550540ad40e193056e8e18e21e7d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_7551ba23e88c4209b494ab100f252bf2 = $('<div id="html_7551ba23e88c4209b494ab100f252bf2" style="width: 100.0%; height: 100.0%;">Veritas Preparatory Charter School (District): Veritas Preparatory Charter School (Percent Staff Members of Color: 19.7% | School Leader of Color? False)</div>')[0];
                 popup_ff41550540ad40e193056e8e18e21e7d.setContent(html_7551ba23e88c4209b494ab100f252bf2);
-            
+
 
             circle_marker_6cc164d890f543e3a98eac6d022d0e7f.bindPopup(popup_ff41550540ad40e193056e8e18e21e7d);
 
-            
-        
-    
+
+
+
             var circle_marker_4cc3321281c64afaba595b3ee7a5c0fd = L.circleMarker(
                 [42.11094,-72.57685],
                 {
@@ -477,20 +480,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_240a51d99d8e4fb6933e23db14733b94 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_16be13bab7da4c3db5410b07c31342e1 = $('<div id="html_16be13bab7da4c3db5410b07c31342e1" style="width: 100.0%; height: 100.0%;">Phoenix Academy Public Charter High School Springfield (District): Phoenix Academy Public Charter High School Springfield (Percent Staff Members of Color: 47.1% | School Leader of Color? True)</div>')[0];
                 popup_240a51d99d8e4fb6933e23db14733b94.setContent(html_16be13bab7da4c3db5410b07c31342e1);
-            
+
 
             circle_marker_4cc3321281c64afaba595b3ee7a5c0fd.bindPopup(popup_240a51d99d8e4fb6933e23db14733b94);
 
-            
-        
-    
+
+
+
             var circle_marker_12efa591d3b54088a7f82923feddaaf9 = L.circleMarker(
                 [42.119564,-72.615234],
                 {
@@ -510,20 +513,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_82b892ae36654e3e8651d2187f82c630 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_e20d3f28bf2d484f8e5bd01d4b312eb3 = $('<div id="html_e20d3f28bf2d484f8e5bd01d4b312eb3" style="width: 100.0%; height: 100.0%;">Springfield: Brightwood (Percent Staff Members of Color: 19.4% | School Leader of Color? False)</div>')[0];
                 popup_82b892ae36654e3e8651d2187f82c630.setContent(html_e20d3f28bf2d484f8e5bd01d4b312eb3);
-            
+
 
             circle_marker_12efa591d3b54088a7f82923feddaaf9.bindPopup(popup_82b892ae36654e3e8651d2187f82c630);
 
-            
-        
-    
+
+
+
             var circle_marker_c2cc5e8755514e6886008e123e6d7c31 = L.circleMarker(
                 [42.124073,-72.6114],
                 {
@@ -543,20 +546,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b073f02abaa04da5ae959a718a5a066a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_9992081d4b834659b32cac4cfa467c05 = $('<div id="html_9992081d4b834659b32cac4cfa467c05" style="width: 100.0%; height: 100.0%;">Springfield: German Gerena Community School (Percent Staff Members of Color: 5.5% | School Leader of Color? True)</div>')[0];
                 popup_b073f02abaa04da5ae959a718a5a066a.setContent(html_9992081d4b834659b32cac4cfa467c05);
-            
+
 
             circle_marker_c2cc5e8755514e6886008e123e6d7c31.bindPopup(popup_b073f02abaa04da5ae959a718a5a066a);
 
-            
-        
-    
+
+
+
             var circle_marker_3ea1a4b412bc45f29943d062059c62a4 = L.circleMarker(
                 [42.120342,-72.60508],
                 {
@@ -576,20 +579,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_8477a812657d45748c14863472494dd8 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a21bb194e2594eb4a53252afe4e315cf = $('<div id="html_a21bb194e2594eb4a53252afe4e315cf" style="width: 100.0%; height: 100.0%;">Springfield: Lincoln (Percent Staff Members of Color: 9.9% | School Leader of Color? True)</div>')[0];
                 popup_8477a812657d45748c14863472494dd8.setContent(html_a21bb194e2594eb4a53252afe4e315cf);
-            
+
 
             circle_marker_3ea1a4b412bc45f29943d062059c62a4.bindPopup(popup_8477a812657d45748c14863472494dd8);
 
-            
-        
-    
+
+
+
             var circle_marker_3e5e4e3a517e4d2fb169d6296f897611 = L.circleMarker(
                 [42.08321,-72.53707],
                 {
@@ -609,20 +612,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_43d1438fcf2f40feb762b0c8ad4f5cc2 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_1b8eb930df174ccc968f23351e614af1 = $('<div id="html_1b8eb930df174ccc968f23351e614af1" style="width: 100.0%; height: 100.0%;">Martin Luther King Jr. Charter School of Excellence (District): Martin Luther King Jr. Charter School of Excellence (Percent Staff Members of Color: 54.6% | School Leader of Color? True)</div>')[0];
                 popup_43d1438fcf2f40feb762b0c8ad4f5cc2.setContent(html_1b8eb930df174ccc968f23351e614af1);
-            
+
 
             circle_marker_3e5e4e3a517e4d2fb169d6296f897611.bindPopup(popup_43d1438fcf2f40feb762b0c8ad4f5cc2);
 
-            
-        
-    
+
+
+
             var circle_marker_09eab12c6f2d4b0ba48eee78b8a13c47 = L.circleMarker(
                 [42.085938,-72.56362],
                 {
@@ -642,20 +645,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_fe7d22b3cd2d4ef18190e4ef7e272f36 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_807048a8e8d8431f93cc0997e05012ac = $('<div id="html_807048a8e8d8431f93cc0997e05012ac" style="width: 100.0%; height: 100.0%;">Springfield: Forest Park Middle (Percent Staff Members of Color: 10.3% | School Leader of Color? True)</div>')[0];
                 popup_fe7d22b3cd2d4ef18190e4ef7e272f36.setContent(html_807048a8e8d8431f93cc0997e05012ac);
-            
+
 
             circle_marker_09eab12c6f2d4b0ba48eee78b8a13c47.bindPopup(popup_fe7d22b3cd2d4ef18190e4ef7e272f36);
 
-            
-        
-    
+
+
+
             var circle_marker_0e74bb2913694e1d9530eb8bd7a2848f = L.circleMarker(
                 [42.091522,-72.56171],
                 {
@@ -675,20 +678,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_2c4eb1ef6983428599b806716b89e94c = L.popup({maxWidth: '300'});
 
-            
+
                 var html_8502e55ca9984d5a801700bc20ac09ba = $('<div id="html_8502e55ca9984d5a801700bc20ac09ba" style="width: 100.0%; height: 100.0%;">Springfield: Kensington International School (Percent Staff Members of Color: 15.9% | School Leader of Color? False)</div>')[0];
                 popup_2c4eb1ef6983428599b806716b89e94c.setContent(html_8502e55ca9984d5a801700bc20ac09ba);
-            
+
 
             circle_marker_0e74bb2913694e1d9530eb8bd7a2848f.bindPopup(popup_2c4eb1ef6983428599b806716b89e94c);
 
-            
-        
-    
+
+
+
             var circle_marker_5e9ab339e0de4ff092f04e6e2932a5d7 = L.circleMarker(
                 [42.082954,-72.5505],
                 {
@@ -708,20 +711,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_1ee39a345a23431c99a863f22848dd79 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_3ee643ba319248d79d5361aeb9d5f3eb = $('<div id="html_3ee643ba319248d79d5361aeb9d5f3eb" style="width: 100.0%; height: 100.0%;">Springfield: Washington (Percent Staff Members of Color: 7.9% | School Leader of Color? False)</div>')[0];
                 popup_1ee39a345a23431c99a863f22848dd79.setContent(html_3ee643ba319248d79d5361aeb9d5f3eb);
-            
+
 
             circle_marker_5e9ab339e0de4ff092f04e6e2932a5d7.bindPopup(popup_1ee39a345a23431c99a863f22848dd79);
 
-            
-        
-    
+
+
+
             var circle_marker_00253dbc000745fa917da2ea0d039e8b = L.circleMarker(
                 [42.09023,-72.552826],
                 {
@@ -741,20 +744,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_246a068247714f22be00c90d2ef2bb98 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_8ff9c5df5f934396a27afd86ddb8e0cb = $('<div id="html_8ff9c5df5f934396a27afd86ddb8e0cb" style="width: 100.0%; height: 100.0%;">Springfield: White Street (Percent Staff Members of Color: 4.5% | School Leader of Color? False)</div>')[0];
                 popup_246a068247714f22be00c90d2ef2bb98.setContent(html_8ff9c5df5f934396a27afd86ddb8e0cb);
-            
+
 
             circle_marker_00253dbc000745fa917da2ea0d039e8b.bindPopup(popup_246a068247714f22be00c90d2ef2bb98);
 
-            
-        
-    
+
+
+
             var circle_marker_0fc32dcfd1ea48f1825e1833820e0577 = L.circleMarker(
                 [42.116528,-72.5494],
                 {
@@ -774,20 +777,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_22d341620bf84aec8c0f8a09bf4c264f = L.popup({maxWidth: '300'});
 
-            
+
                 var html_4aa23ad7074349878b6e34f0581f6c89 = $('<div id="html_4aa23ad7074349878b6e34f0581f6c89" style="width: 100.0%; height: 100.0%;">Springfield: Springfield High School of Science and Technology (Percent Staff Members of Color: 14.0% | School Leader of Color? True)</div>')[0];
                 popup_22d341620bf84aec8c0f8a09bf4c264f.setContent(html_4aa23ad7074349878b6e34f0581f6c89);
-            
+
 
             circle_marker_0fc32dcfd1ea48f1825e1833820e0577.bindPopup(popup_22d341620bf84aec8c0f8a09bf4c264f);
 
-            
-        
-    
+
+
+
             var circle_marker_fe57d056ae084314b797d1a4ecb299df = L.circleMarker(
                 [42.113724,-72.556076],
                 {
@@ -807,20 +810,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_19eefca1dce541abbe61320eb883a0dc = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a91efd43e39d44ad9a3d4e5ac123403a = $('<div id="html_a91efd43e39d44ad9a3d4e5ac123403a" style="width: 100.0%; height: 100.0%;">Springfield: Homer Street (Percent Staff Members of Color: 9.4% | School Leader of Color? False)</div>')[0];
                 popup_19eefca1dce541abbe61320eb883a0dc.setContent(html_a91efd43e39d44ad9a3d4e5ac123403a);
-            
+
 
             circle_marker_fe57d056ae084314b797d1a4ecb299df.bindPopup(popup_19eefca1dce541abbe61320eb883a0dc);
 
-            
-        
-    
+
+
+
             var circle_marker_52be2c74a9f44253a0c17073036ccf67 = L.circleMarker(
                 [42.11375,-72.56616],
                 {
@@ -840,20 +843,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_62894e198a224f469022c8a375eeb12e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_6c7149f4fd034671889b06407e705acc = $('<div id="html_6c7149f4fd034671889b06407e705acc" style="width: 100.0%; height: 100.0%;">Springfield: Rebecca M Johnson (Percent Staff Members of Color: 21.2% | School Leader of Color? True)</div>')[0];
                 popup_62894e198a224f469022c8a375eeb12e.setContent(html_6c7149f4fd034671889b06407e705acc);
-            
+
 
             circle_marker_52be2c74a9f44253a0c17073036ccf67.bindPopup(popup_62894e198a224f469022c8a375eeb12e);
 
-            
-        
-    
+
+
+
             var circle_marker_86f6e7ee59834fa080493e109bdd28ec = L.circleMarker(
                 [42.108475,-72.56652],
                 {
@@ -873,20 +876,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_0d360cab4d6d44879e8b16fdc0f5a05e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_426491959ed945c39357ea238db4ad54 = $('<div id="html_426491959ed945c39357ea238db4ad54" style="width: 100.0%; height: 100.0%;">Springfield: William N. DeBerry (Percent Staff Members of Color: 16.4% | School Leader of Color? False)</div>')[0];
                 popup_0d360cab4d6d44879e8b16fdc0f5a05e.setContent(html_426491959ed945c39357ea238db4ad54);
-            
+
 
             circle_marker_86f6e7ee59834fa080493e109bdd28ec.bindPopup(popup_0d360cab4d6d44879e8b16fdc0f5a05e);
 
-            
-        
-    
+
+
+
             var circle_marker_6fe1ec90e59241cb96ab6b62e9a7f058 = L.circleMarker(
                 [42.10204,-72.56305],
                 {
@@ -906,20 +909,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_801e861138f04b3eb0e0fe2415452033 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_fa86ed4226d346f6aa38fcca605b0f84 = $('<div id="html_fa86ed4226d346f6aa38fcca605b0f84" style="width: 100.0%; height: 100.0%;">Springfield: Springfield Public Day Middle School (Percent Staff Members of Color: 9.0% | School Leader of Color? False)</div>')[0];
                 popup_801e861138f04b3eb0e0fe2415452033.setContent(html_fa86ed4226d346f6aa38fcca605b0f84);
-            
+
 
             circle_marker_6fe1ec90e59241cb96ab6b62e9a7f058.bindPopup(popup_801e861138f04b3eb0e0fe2415452033);
 
-            
-        
-    
+
+
+
             var circle_marker_6c0d7db6241c4c53a744fb07cae19684 = L.circleMarker(
                 [42.265663,-71.78909],
                 {
@@ -939,20 +942,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_bf74d63b22ce435baf068b0548ead6a8 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_128d0e6ce0f84e45a7eeafa00b024eda = $('<div id="html_128d0e6ce0f84e45a7eeafa00b024eda" style="width: 100.0%; height: 100.0%;">Seven Hills Charter Public (District): Seven Hills Charter School (Percent Staff Members of Color: 27.5% | School Leader of Color? True)</div>')[0];
                 popup_bf74d63b22ce435baf068b0548ead6a8.setContent(html_128d0e6ce0f84e45a7eeafa00b024eda);
-            
+
 
             circle_marker_6c0d7db6241c4c53a744fb07cae19684.bindPopup(popup_bf74d63b22ce435baf068b0548ead6a8);
 
-            
-        
-    
+
+
+
             var circle_marker_a0c1153c291a4e18961e03af7cb0ffa8 = L.circleMarker(
                 [42.2546,-71.81775],
                 {
@@ -972,20 +975,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_9685b146e4bd42a2b28d3c66a7860adf = L.popup({maxWidth: '300'});
 
-            
+
                 var html_6aebb43fa7894c73bc0552a32ad05491 = $('<div id="html_6aebb43fa7894c73bc0552a32ad05491" style="width: 100.0%; height: 100.0%;">Worcester: Claremont Academy (Percent Staff Members of Color: 17.1% | School Leader of Color? False)</div>')[0];
                 popup_9685b146e4bd42a2b28d3c66a7860adf.setContent(html_6aebb43fa7894c73bc0552a32ad05491);
-            
+
 
             circle_marker_a0c1153c291a4e18961e03af7cb0ffa8.bindPopup(popup_9685b146e4bd42a2b28d3c66a7860adf);
 
-            
-        
-    
+
+
+
             var circle_marker_865f92d48d07478a973a140e0b7b0e35 = L.circleMarker(
                 [42.254776,-71.81875],
                 {
@@ -1005,20 +1008,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_20c77d1389364744b703b38fbf9b6c60 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ca84fd8584b44f52a1e8528df592f0ce = $('<div id="html_ca84fd8584b44f52a1e8528df592f0ce" style="width: 100.0%; height: 100.0%;">Worcester: Woodland Academy (Percent Staff Members of Color: 19.5% | School Leader of Color? True)</div>')[0];
                 popup_20c77d1389364744b703b38fbf9b6c60.setContent(html_ca84fd8584b44f52a1e8528df592f0ce);
-            
+
 
             circle_marker_865f92d48d07478a973a140e0b7b0e35.bindPopup(popup_20c77d1389364744b703b38fbf9b6c60);
 
-            
-        
-    
+
+
+
             var circle_marker_9bb1036b56b846ed8fd831cf0d146f71 = L.circleMarker(
                 [42.70982,-71.167625],
                 {
@@ -1038,20 +1041,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_889e944c4636412e8710d88174f7cf96 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_59955f2dbe3f46fe89c26b2cd3accb18 = $('<div id="html_59955f2dbe3f46fe89c26b2cd3accb18" style="width: 100.0%; height: 100.0%;">Community Day Charter Public School - Prospect (District): Community Day Charter Public School - Prospect (Percent Staff Members of Color: 13.1% | School Leader of Color? False)</div>')[0];
                 popup_889e944c4636412e8710d88174f7cf96.setContent(html_59955f2dbe3f46fe89c26b2cd3accb18);
-            
+
 
             circle_marker_9bb1036b56b846ed8fd831cf0d146f71.bindPopup(popup_889e944c4636412e8710d88174f7cf96);
 
-            
-        
-    
+
+
+
             var circle_marker_896c51e7163246adb39ba1d1cf294af5 = L.circleMarker(
                 [42.710114,-71.16426],
                 {
@@ -1071,20 +1074,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d08c56e553aa453bab5699d2a8c7978b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_767dd854b30d4ebfab34d2f6bdfd5add = $('<div id="html_767dd854b30d4ebfab34d2f6bdfd5add" style="width: 100.0%; height: 100.0%;">Lawrence: High School Learning Center (Percent Staff Members of Color: 10.7% | School Leader of Color? False)</div>')[0];
                 popup_d08c56e553aa453bab5699d2a8c7978b.setContent(html_767dd854b30d4ebfab34d2f6bdfd5add);
-            
+
 
             circle_marker_896c51e7163246adb39ba1d1cf294af5.bindPopup(popup_d08c56e553aa453bab5699d2a8c7978b);
 
-            
-        
-    
+
+
+
             var circle_marker_13e328f9cd95483b83f1440723d61ef1 = L.circleMarker(
                 [42.710255,-71.162285],
                 {
@@ -1104,20 +1107,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_7f6992be109e48e7ba512a80cf1057e6 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a1531dc9b00e4ecaaf317c8bfd7da526 = $('<div id="html_a1531dc9b00e4ecaaf317c8bfd7da526" style="width: 100.0%; height: 100.0%;">Lawrence: Oliver Partnership School (Percent Staff Members of Color: 19.4% | School Leader of Color? False)</div>')[0];
                 popup_7f6992be109e48e7ba512a80cf1057e6.setContent(html_a1531dc9b00e4ecaaf317c8bfd7da526);
-            
+
 
             circle_marker_13e328f9cd95483b83f1440723d61ef1.bindPopup(popup_7f6992be109e48e7ba512a80cf1057e6);
 
-            
-        
-    
+
+
+
             var circle_marker_e783f6c403314600854a8c59dac68c75 = L.circleMarker(
                 [42.710114,-71.16426],
                 {
@@ -1137,20 +1140,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d1ad5dc6368348c48245ebe24d9f2feb = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a15aa219c0a24d10ba0f852ac72be6be = $('<div id="html_a15aa219c0a24d10ba0f852ac72be6be" style="width: 100.0%; height: 100.0%;">Lawrence: UP Academy Oliver Middle School (Percent Staff Members of Color: 44.1% | School Leader of Color? True)</div>')[0];
                 popup_d1ad5dc6368348c48245ebe24d9f2feb.setContent(html_a15aa219c0a24d10ba0f852ac72be6be);
-            
+
 
             circle_marker_e783f6c403314600854a8c59dac68c75.bindPopup(popup_d1ad5dc6368348c48245ebe24d9f2feb);
 
-            
-        
-    
+
+
+
             var circle_marker_621b3bf9518b4db5b1822a29b9a1936f = L.circleMarker(
                 [42.702953,-71.18025],
                 {
@@ -1170,20 +1173,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_e2fdd3b5a1e9411bbddca5f5885d1912 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_2136d51c0ecf4d4eb1dc4c695b2ede09 = $('<div id="html_2136d51c0ecf4d4eb1dc4c695b2ede09" style="width: 100.0%; height: 100.0%;">Lawrence: Alexander B Bruce (Percent Staff Members of Color: 14.7% | School Leader of Color? False)</div>')[0];
                 popup_e2fdd3b5a1e9411bbddca5f5885d1912.setContent(html_2136d51c0ecf4d4eb1dc4c695b2ede09);
-            
+
 
             circle_marker_621b3bf9518b4db5b1822a29b9a1936f.bindPopup(popup_e2fdd3b5a1e9411bbddca5f5885d1912);
 
-            
-        
-    
+
+
+
             var circle_marker_d94f5ef835f148c0aaf5e644285c1536 = L.circleMarker(
                 [42.717445,-71.175285],
                 {
@@ -1203,20 +1206,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_580a2333310444febe691070cf67dae1 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_8bb7c21f451a4265ae9e1dffbde84479 = $('<div id="html_8bb7c21f451a4265ae9e1dffbde84479" style="width: 100.0%; height: 100.0%;">Lawrence: Arlington Middle School (Percent Staff Members of Color: 18.6% | School Leader of Color? False)</div>')[0];
                 popup_580a2333310444febe691070cf67dae1.setContent(html_8bb7c21f451a4265ae9e1dffbde84479);
-            
+
 
             circle_marker_d94f5ef835f148c0aaf5e644285c1536.bindPopup(popup_580a2333310444febe691070cf67dae1);
 
-            
-        
-    
+
+
+
             var circle_marker_f5a4fb56bb7a4696a5a3d1c5b277e7e4 = L.circleMarker(
                 [42.71824,-71.144775],
                 {
@@ -1236,20 +1239,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_5597c6e11c494af7a990240fc5d7d9bb = L.popup({maxWidth: '300'});
 
-            
+
                 var html_7b37f255ecfe4d36b1a6110dd7805b35 = $('<div id="html_7b37f255ecfe4d36b1a6110dd7805b35" style="width: 100.0%; height: 100.0%;">Lawrence: Edward F. Parthum (Percent Staff Members of Color: 23.3% | School Leader of Color? False)</div>')[0];
                 popup_5597c6e11c494af7a990240fc5d7d9bb.setContent(html_7b37f255ecfe4d36b1a6110dd7805b35);
-            
+
 
             circle_marker_f5a4fb56bb7a4696a5a3d1c5b277e7e4.bindPopup(popup_5597c6e11c494af7a990240fc5d7d9bb);
 
-            
-        
-    
+
+
+
             var circle_marker_f7f002419c5d4cbeaa47b90d862d0d55 = L.circleMarker(
                 [42.713863,-71.16876],
                 {
@@ -1269,20 +1272,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_5723cd44e6344da39cdce16b7f5f991d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d1e2dc7691b640d0a314234ae0101d35 = $('<div id="html_d1e2dc7691b640d0a314234ae0101d35" style="width: 100.0%; height: 100.0%;">Lawrence: Francis M Leahy (Percent Staff Members of Color: 24.4% | School Leader of Color? False)</div>')[0];
                 popup_5723cd44e6344da39cdce16b7f5f991d.setContent(html_d1e2dc7691b640d0a314234ae0101d35);
-            
+
 
             circle_marker_f7f002419c5d4cbeaa47b90d862d0d55.bindPopup(popup_5723cd44e6344da39cdce16b7f5f991d);
 
-            
-        
-    
+
+
+
             var circle_marker_fcef3dc281244a888036e0b3343025ee = L.circleMarker(
                 [42.700916,-71.17502],
                 {
@@ -1302,20 +1305,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b9dba833b9af49fb89a452625e5368c9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_53252c6a6e864258aa49c8cc4b0b011b = $('<div id="html_53252c6a6e864258aa49c8cc4b0b011b" style="width: 100.0%; height: 100.0%;">Lawrence: Gerard A. Guilmette (Percent Staff Members of Color: 17.9% | School Leader of Color? False)</div>')[0];
                 popup_b9dba833b9af49fb89a452625e5368c9.setContent(html_53252c6a6e864258aa49c8cc4b0b011b);
-            
+
 
             circle_marker_fcef3dc281244a888036e0b3343025ee.bindPopup(popup_b9dba833b9af49fb89a452625e5368c9);
 
-            
-        
-    
+
+
+
             var circle_marker_7ab2c4b405db4ba89ef859e4168c3c8b = L.circleMarker(
                 [42.700916,-71.17502],
                 {
@@ -1335,20 +1338,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_00dc8821bf374a9d8cb0703bcc650df1 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_c5f83d6c114841f89a628d66b667dcc8 = $('<div id="html_c5f83d6c114841f89a628d66b667dcc8" style="width: 100.0%; height: 100.0%;">Lawrence: Guilmette Middle School (Percent Staff Members of Color: 23.1% | School Leader of Color? False)</div>')[0];
                 popup_00dc8821bf374a9d8cb0703bcc650df1.setContent(html_c5f83d6c114841f89a628d66b667dcc8);
-            
+
 
             circle_marker_7ab2c4b405db4ba89ef859e4168c3c8b.bindPopup(popup_00dc8821bf374a9d8cb0703bcc650df1);
 
-            
-        
-    
+
+
+
             var circle_marker_8b70d9578d914f94a45a3f2bae20b79b = L.circleMarker(
                 [42.69741,-71.1769],
                 {
@@ -1368,20 +1371,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_5d6e6b0a8ca44a21a9a14e16eb3b4dc5 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_be92c566daed43acb921c453efb6ab04 = $('<div id="html_be92c566daed43acb921c453efb6ab04" style="width: 100.0%; height: 100.0%;">Lawrence: James F Hennessey (Percent Staff Members of Color: 29.9% | School Leader of Color? True)</div>')[0];
                 popup_5d6e6b0a8ca44a21a9a14e16eb3b4dc5.setContent(html_be92c566daed43acb921c453efb6ab04);
-            
+
 
             circle_marker_8b70d9578d914f94a45a3f2bae20b79b.bindPopup(popup_5d6e6b0a8ca44a21a9a14e16eb3b4dc5);
 
-            
-        
-    
+
+
+
             var circle_marker_47e6b5d7a86b4df7ad0898f6536e7f0b = L.circleMarker(
                 [42.717564,-71.17068],
                 {
@@ -1401,20 +1404,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_92bcc493fb3e4943853d3833e27b93b1 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_f441588728f64577926338d8cd1e31d4 = $('<div id="html_f441588728f64577926338d8cd1e31d4" style="width: 100.0%; height: 100.0%;">Lawrence: John K Tarbox (Percent Staff Members of Color: 28.5% | School Leader of Color? True)</div>')[0];
                 popup_92bcc493fb3e4943853d3833e27b93b1.setContent(html_f441588728f64577926338d8cd1e31d4);
-            
+
 
             circle_marker_47e6b5d7a86b4df7ad0898f6536e7f0b.bindPopup(popup_92bcc493fb3e4943853d3833e27b93b1);
 
-            
-        
-    
+
+
+
             var circle_marker_d96f23467a5a43a3abc8c55ab4fc0c36 = L.circleMarker(
                 [42.71723,-71.16517],
                 {
@@ -1434,20 +1437,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_2ba0a7aa811945279ce5e71f93147e0e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d62d09921da94868b04df5a838953979 = $('<div id="html_d62d09921da94868b04df5a838953979" style="width: 100.0%; height: 100.0%;">Lawrence: Lawlor Early Childhood Center (Percent Staff Members of Color: 41.4% | School Leader of Color? False)</div>')[0];
                 popup_2ba0a7aa811945279ce5e71f93147e0e.setContent(html_d62d09921da94868b04df5a838953979);
-            
+
 
             circle_marker_d96f23467a5a43a3abc8c55ab4fc0c36.bindPopup(popup_2ba0a7aa811945279ce5e71f93147e0e);
 
-            
-        
-    
+
+
+
             var circle_marker_3184da0562f44a41b11247d02edf1ead = L.circleMarker(
                 [42.71824,-71.144775],
                 {
@@ -1467,20 +1470,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_5907cb2032014d23af31138be1c6ceca = L.popup({maxWidth: '300'});
 
-            
+
                 var html_f8469fd6be1f49c18ad4244b3d2b3adc = $('<div id="html_f8469fd6be1f49c18ad4244b3d2b3adc" style="width: 100.0%; height: 100.0%;">Lawrence: Parthum Middle School (Percent Staff Members of Color: 18.2% | School Leader of Color? False)</div>')[0];
                 popup_5907cb2032014d23af31138be1c6ceca.setContent(html_f8469fd6be1f49c18ad4244b3d2b3adc);
-            
+
 
             circle_marker_3184da0562f44a41b11247d02edf1ead.bindPopup(popup_5907cb2032014d23af31138be1c6ceca);
 
-            
-        
-    
+
+
+
             var circle_marker_28f78c2c394b4950ac4182bfbfcb8165 = L.circleMarker(
                 [42.710747,-71.17547],
                 {
@@ -1500,20 +1503,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_dd44e7dd0fef4d5098539d4b21cc4a1b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_18e6a168d9a24cc38a57f41375c7e73a = $('<div id="html_18e6a168d9a24cc38a57f41375c7e73a" style="width: 100.0%; height: 100.0%;">Lawrence Family Development Charter (District): Lawrence Family Development Charter School (Percent Staff Members of Color: 27.2% | School Leader of Color? True)</div>')[0];
                 popup_dd44e7dd0fef4d5098539d4b21cc4a1b.setContent(html_18e6a168d9a24cc38a57f41375c7e73a);
-            
+
 
             circle_marker_28f78c2c394b4950ac4182bfbfcb8165.bindPopup(popup_dd44e7dd0fef4d5098539d4b21cc4a1b);
 
-            
-        
-    
+
+
+
             var circle_marker_b7caba16fea04d35846237d9e206597d = L.circleMarker(
                 [42.71289,-71.14404],
                 {
@@ -1533,20 +1536,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b41d0b40255a4cd7ac32c070659277e1 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_4218d824fe514528b91a10b56f9752ec = $('<div id="html_4218d824fe514528b91a10b56f9752ec" style="width: 100.0%; height: 100.0%;">Community Day Charter Public School - Gateway (District): Community Day Charter Public School - Gateway (Percent Staff Members of Color: 24.2% | School Leader of Color? False)</div>')[0];
                 popup_b41d0b40255a4cd7ac32c070659277e1.setContent(html_4218d824fe514528b91a10b56f9752ec);
-            
+
 
             circle_marker_b7caba16fea04d35846237d9e206597d.bindPopup(popup_b41d0b40255a4cd7ac32c070659277e1);
 
-            
-        
-    
+
+
+
             var circle_marker_ea10cadd07854c06bef11fb2b78c77f7 = L.circleMarker(
                 [42.71289,-71.14404],
                 {
@@ -1566,20 +1569,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_2b9106965af1498a9a365ecdd456f2fb = L.popup({maxWidth: '300'});
 
-            
+
                 var html_2db8ecc1fcea401490f682809562cba4 = $('<div id="html_2db8ecc1fcea401490f682809562cba4" style="width: 100.0%; height: 100.0%;">Community Day Charter Public School - R. Kingman Webster (District): Community Day Charter Public School - R. Kingman Webster (Percent Staff Members of Color: 13.1% | School Leader of Color? False)</div>')[0];
                 popup_2b9106965af1498a9a365ecdd456f2fb.setContent(html_2db8ecc1fcea401490f682809562cba4);
-            
+
 
             circle_marker_ea10cadd07854c06bef11fb2b78c77f7.bindPopup(popup_2b9106965af1498a9a365ecdd456f2fb);
 
-            
-        
-    
+
+
+
             var circle_marker_49fb84098e5a46b899d2786d5c6b91c3 = L.circleMarker(
                 [42.717445,-71.175285],
                 {
@@ -1599,20 +1602,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_f58748f8bbe847c582f4e69483b2eb13 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_e99feea8a9f94ce79bdc99278ed75e61 = $('<div id="html_e99feea8a9f94ce79bdc99278ed75e61" style="width: 100.0%; height: 100.0%;">Lawrence: Community Day Arlington (Percent Staff Members of Color: 25.2% | School Leader of Color? True)</div>')[0];
                 popup_f58748f8bbe847c582f4e69483b2eb13.setContent(html_e99feea8a9f94ce79bdc99278ed75e61);
-            
+
 
             circle_marker_49fb84098e5a46b899d2786d5c6b91c3.bindPopup(popup_f58748f8bbe847c582f4e69483b2eb13);
 
-            
-        
-    
+
+
+
             var circle_marker_e65e3343354747319963ac53e440f2d2 = L.circleMarker(
                 [42.706383,-71.1534],
                 {
@@ -1632,20 +1635,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_4178625355804451bb7aca1cde4f2b11 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_3b0611d405f74b33bd484ce62d755a2c = $('<div id="html_3b0611d405f74b33bd484ce62d755a2c" style="width: 100.0%; height: 100.0%;">Lawrence: Phoenix Academy Lawrence (Percent Staff Members of Color: 38.2% | School Leader of Color? False)</div>')[0];
                 popup_4178625355804451bb7aca1cde4f2b11.setContent(html_3b0611d405f74b33bd484ce62d755a2c);
-            
+
 
             circle_marker_e65e3343354747319963ac53e440f2d2.bindPopup(popup_4178625355804451bb7aca1cde4f2b11);
 
-            
-        
-    
+
+
+
             var circle_marker_6836a6644e6648bbb98143713bf318e7 = L.circleMarker(
                 [42.71117,-71.15259],
                 {
@@ -1665,20 +1668,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c6636697fb9e4c7c9a3980aff29e995a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ce330f5d314f407eb83d91048e1d06f0 = $('<div id="html_ce330f5d314f407eb83d91048e1d06f0" style="width: 100.0%; height: 100.0%;">Lawrence: UP Academy Leonard Middle School (Percent Staff Members of Color: 44.3% | School Leader of Color? True)</div>')[0];
                 popup_c6636697fb9e4c7c9a3980aff29e995a.setContent(html_ce330f5d314f407eb83d91048e1d06f0);
-            
+
 
             circle_marker_6836a6644e6648bbb98143713bf318e7.bindPopup(popup_c6636697fb9e4c7c9a3980aff29e995a);
 
-            
-        
-    
+
+
+
             var circle_marker_3686b31a29054b968da6085d388f3a4a = L.circleMarker(
                 [42.700867,-71.18334],
                 {
@@ -1698,20 +1701,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_8bcb29a5a4d044aebaef7a7a0d49cace = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d495da7192864e9bb452d11cd6f67dd8 = $('<div id="html_d495da7192864e9bb452d11cd6f67dd8" style="width: 100.0%; height: 100.0%;">Lawrence: Lawrence Family Public Academy (Percent Staff Members of Color: 15.1% | School Leader of Color? False)</div>')[0];
                 popup_8bcb29a5a4d044aebaef7a7a0d49cace.setContent(html_d495da7192864e9bb452d11cd6f67dd8);
-            
+
 
             circle_marker_3686b31a29054b968da6085d388f3a4a.bindPopup(popup_8bcb29a5a4d044aebaef7a7a0d49cace);
 
-            
-        
-    
+
+
+
             var circle_marker_c94728bbbcb14c94962e0aabc91502cd = L.circleMarker(
                 [42.69436,-71.16592],
                 {
@@ -1731,20 +1734,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_de72118fdc7146808085dc3073f1a3a7 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_03ea6d4bdb4c426eac2ac96d572bda9c = $('<div id="html_03ea6d4bdb4c426eac2ac96d572bda9c" style="width: 100.0%; height: 100.0%;">Lawrence: Emily G Wetherbee (Percent Staff Members of Color: 13.0% | School Leader of Color? False)</div>')[0];
                 popup_de72118fdc7146808085dc3073f1a3a7.setContent(html_03ea6d4bdb4c426eac2ac96d572bda9c);
-            
+
 
             circle_marker_c94728bbbcb14c94962e0aabc91502cd.bindPopup(popup_de72118fdc7146808085dc3073f1a3a7);
 
-            
-        
-    
+
+
+
             var circle_marker_0f9bef639c13450f81837ba63c9daabe = L.circleMarker(
                 [42.69614,-71.14868],
                 {
@@ -1764,20 +1767,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_456057504fcf4e8aaaa10a467d96dbb9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_fd414c32253c4de38aa0d6cb39396edd = $('<div id="html_fd414c32253c4de38aa0d6cb39396edd" style="width: 100.0%; height: 100.0%;">Lawrence: John Breen School (Percent Staff Members of Color: 35.5% | School Leader of Color? True)</div>')[0];
                 popup_456057504fcf4e8aaaa10a467d96dbb9.setContent(html_fd414c32253c4de38aa0d6cb39396edd);
-            
+
 
             circle_marker_0f9bef639c13450f81837ba63c9daabe.bindPopup(popup_456057504fcf4e8aaaa10a467d96dbb9);
 
-            
-        
-    
+
+
+
             var circle_marker_1d4326e1c65a4ce5a672caa2b249d9de = L.circleMarker(
                 [42.693214,-71.14632],
                 {
@@ -1797,20 +1800,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_4833993551ea42b4a2e2a590b7033513 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_940374abfdd14422b46729fa009e3fda = $('<div id="html_940374abfdd14422b46729fa009e3fda" style="width: 100.0%; height: 100.0%;">Lawrence: South Lawrence East Elementary School (Percent Staff Members of Color: 15.4% | School Leader of Color? False)</div>')[0];
                 popup_4833993551ea42b4a2e2a590b7033513.setContent(html_940374abfdd14422b46729fa009e3fda);
-            
+
 
             circle_marker_1d4326e1c65a4ce5a672caa2b249d9de.bindPopup(popup_4833993551ea42b4a2e2a590b7033513);
 
-            
-        
-    
+
+
+
             var circle_marker_d57f553d8c1c40ad9b1d3e486ef001df = L.circleMarker(
                 [42.693214,-71.14632],
                 {
@@ -1830,20 +1833,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_195dd90a25554551baedf77edfa40c8c = L.popup({maxWidth: '300'});
 
-            
+
                 var html_5b52892d511140cca82d87d6f01583d1 = $('<div id="html_5b52892d511140cca82d87d6f01583d1" style="width: 100.0%; height: 100.0%;">Lawrence: Spark Academy (Percent Staff Members of Color: 39.8% | School Leader of Color? False)</div>')[0];
                 popup_195dd90a25554551baedf77edfa40c8c.setContent(html_5b52892d511140cca82d87d6f01583d1);
-            
+
 
             circle_marker_d57f553d8c1c40ad9b1d3e486ef001df.bindPopup(popup_195dd90a25554551baedf77edfa40c8c);
 
-            
-        
-    
+
+
+
             var circle_marker_1d175cbb89f24808947fd8b9b6a72a5b = L.circleMarker(
                 [42.641388,-71.312675],
                 {
@@ -1863,20 +1866,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_64adf9947ed8478996443b027fbafc53 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_522bf5dc8814426088d3fadacc258d0f = $('<div id="html_522bf5dc8814426088d3fadacc258d0f" style="width: 100.0%; height: 100.0%;">Lowell Community Charter Public (District): Lowell Community Charter Public School (Percent Staff Members of Color: 30.4% | School Leader of Color? True)</div>')[0];
                 popup_64adf9947ed8478996443b027fbafc53.setContent(html_522bf5dc8814426088d3fadacc258d0f);
-            
+
 
             circle_marker_1d175cbb89f24808947fd8b9b6a72a5b.bindPopup(popup_64adf9947ed8478996443b027fbafc53);
 
-            
-        
-    
+
+
+
             var circle_marker_24f4ac51854c4dd48a74f24e1879ea7f = L.circleMarker(
                 [42.646194,-71.31922],
                 {
@@ -1896,20 +1899,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_41d7859f28f445e5b122f84d2b316fd6 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_25a666e8626b46d2a906391649a6fe0a = $('<div id="html_25a666e8626b46d2a906391649a6fe0a" style="width: 100.0%; height: 100.0%;">Lowell: Charlotte M Murkland Elementary (Percent Staff Members of Color: 6.8% | School Leader of Color? False)</div>')[0];
                 popup_41d7859f28f445e5b122f84d2b316fd6.setContent(html_25a666e8626b46d2a906391649a6fe0a);
-            
+
 
             circle_marker_24f4ac51854c4dd48a74f24e1879ea7f.bindPopup(popup_41d7859f28f445e5b122f84d2b316fd6);
 
-            
-        
-    
+
+
+
             var circle_marker_3d7a7e08dee64b0eb467c597015e892d = L.circleMarker(
                 [42.46885,-70.949715],
                 {
@@ -1929,20 +1932,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_7a03c73047e040659493841c4a255bdf = L.popup({maxWidth: '300'});
 
-            
+
                 var html_3e54f8eb97c04590846ff3fd73ea4c03 = $('<div id="html_3e54f8eb97c04590846ff3fd73ea4c03" style="width: 100.0%; height: 100.0%;">KIPP Academy Lynn Charter (District): KIPP Academy Lynn Charter School (Percent Staff Members of Color: 30.6% | School Leader of Color? False)</div>')[0];
                 popup_7a03c73047e040659493841c4a255bdf.setContent(html_3e54f8eb97c04590846ff3fd73ea4c03);
-            
+
 
             circle_marker_3d7a7e08dee64b0eb467c597015e892d.bindPopup(popup_7a03c73047e040659493841c4a255bdf);
 
-            
-        
-    
+
+
+
             var circle_marker_5dffc26e226e4b9fa5ea96d243a940ad = L.circleMarker(
                 [42.46512,-70.954056],
                 {
@@ -1962,20 +1965,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_6c6b2a9547f749c8b3c93e87de15a048 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_1731582dc0af40ce8843c908f8859a6f = $('<div id="html_1731582dc0af40ce8843c908f8859a6f" style="width: 100.0%; height: 100.0%;">Lynn: Cobbet Elementary (Percent Staff Members of Color: 8.2% | School Leader of Color? False)</div>')[0];
                 popup_6c6b2a9547f749c8b3c93e87de15a048.setContent(html_1731582dc0af40ce8843c908f8859a6f);
-            
+
 
             circle_marker_5dffc26e226e4b9fa5ea96d243a940ad.bindPopup(popup_6c6b2a9547f749c8b3c93e87de15a048);
 
-            
-        
-    
+
+
+
             var circle_marker_6c23887be20d4e62b55f40a028db2a8e = L.circleMarker(
                 [42.46499,-70.93873],
                 {
@@ -1995,20 +1998,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_eebf9c2e372c42eda0cbe8d73218528a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_f2a381fd07ca475ea819b22609fc00c6 = $('<div id="html_f2a381fd07ca475ea819b22609fc00c6" style="width: 100.0%; height: 100.0%;">Lynn: E J Harrington (Percent Staff Members of Color: 8.3% | School Leader of Color? False)</div>')[0];
                 popup_eebf9c2e372c42eda0cbe8d73218528a.setContent(html_f2a381fd07ca475ea819b22609fc00c6);
-            
+
 
             circle_marker_6c23887be20d4e62b55f40a028db2a8e.bindPopup(popup_eebf9c2e372c42eda0cbe8d73218528a);
 
-            
-        
-    
+
+
+
             var circle_marker_568408146652482285a3b5410bdbcef4 = L.circleMarker(
                 [42.472027,-70.9376],
                 {
@@ -2028,20 +2031,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_fdb4fa41cb2d4554b9d2c9cd7106326e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_fabedb807caa40d68a6424a238e642b9 = $('<div id="html_fabedb807caa40d68a6424a238e642b9" style="width: 100.0%; height: 100.0%;">Lynn: Ingalls (Percent Staff Members of Color: 9.7% | School Leader of Color? True)</div>')[0];
                 popup_fdb4fa41cb2d4554b9d2c9cd7106326e.setContent(html_fabedb807caa40d68a6424a238e642b9);
-            
+
 
             circle_marker_568408146652482285a3b5410bdbcef4.bindPopup(popup_fdb4fa41cb2d4554b9d2c9cd7106326e);
 
-            
-        
-    
+
+
+
             var circle_marker_d6d3a9deeb384b4c94784f9d0be26a73 = L.circleMarker(
                 [42.47088,-70.94686],
                 {
@@ -2061,20 +2064,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_964f9fd71b8544b48c613af140b2bf2b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_49e5dc651b7c474a86b3a755796ead59 = $('<div id="html_49e5dc651b7c474a86b3a755796ead59" style="width: 100.0%; height: 100.0%;">Lynn: Robert L Ford (Percent Staff Members of Color: 14.6% | School Leader of Color? False)</div>')[0];
                 popup_964f9fd71b8544b48c613af140b2bf2b.setContent(html_49e5dc651b7c474a86b3a755796ead59);
-            
+
 
             circle_marker_d6d3a9deeb384b4c94784f9d0be26a73.bindPopup(popup_964f9fd71b8544b48c613af140b2bf2b);
 
-            
-        
-    
+
+
+
             var circle_marker_00643132fd004ab5b5c2e4332d487d3c = L.circleMarker(
                 [42.462395,-70.9554],
                 {
@@ -2094,20 +2097,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_beb0915b746b4992a8e0f8e67e42a82b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_cfaa8cee6c334d5baba94c66b130bacb = $('<div id="html_cfaa8cee6c334d5baba94c66b130bacb" style="width: 100.0%; height: 100.0%;">Lynn: Washington Elementary School (Percent Staff Members of Color: 7.3% | School Leader of Color? True)</div>')[0];
                 popup_beb0915b746b4992a8e0f8e67e42a82b.setContent(html_cfaa8cee6c334d5baba94c66b130bacb);
-            
+
 
             circle_marker_00643132fd004ab5b5c2e4332d487d3c.bindPopup(popup_beb0915b746b4992a8e0f8e67e42a82b);
 
-            
-        
-    
+
+
+
             var circle_marker_deb5821d87504c8a9711db1ecabed784 = L.circleMarker(
                 [42.468777,-70.966354],
                 {
@@ -2127,20 +2130,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_bfa9d5207bd54e4e95d59677ef5889ef = L.popup({maxWidth: '300'});
 
-            
+
                 var html_f005eea1b3214719a90e8e5cda4f698f = $('<div id="html_f005eea1b3214719a90e8e5cda4f698f" style="width: 100.0%; height: 100.0%;">Lynn: Tracy (Percent Staff Members of Color: 5.4% | School Leader of Color? False)</div>')[0];
                 popup_bfa9d5207bd54e4e95d59677ef5889ef.setContent(html_f005eea1b3214719a90e8e5cda4f698f);
-            
+
 
             circle_marker_deb5821d87504c8a9711db1ecabed784.bindPopup(popup_bfa9d5207bd54e4e95d59677ef5889ef);
 
-            
-        
-    
+
+
+
             var circle_marker_3e73d7e9a0504a2d93ad5a5025ceb737 = L.circleMarker(
                 [42.46082,-70.9631],
                 {
@@ -2160,20 +2163,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_22fcba13f4ae4eb187e987d385408751 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_440c3bba406d469597cd5eb88eb37abc = $('<div id="html_440c3bba406d469597cd5eb88eb37abc" style="width: 100.0%; height: 100.0%;">Lynn: Wm P Connery (Percent Staff Members of Color: 11.1% | School Leader of Color? False)</div>')[0];
                 popup_22fcba13f4ae4eb187e987d385408751.setContent(html_440c3bba406d469597cd5eb88eb37abc);
-            
+
 
             circle_marker_3e73d7e9a0504a2d93ad5a5025ceb737.bindPopup(popup_22fcba13f4ae4eb187e987d385408751);
 
-            
-        
-    
+
+
+
             var circle_marker_fba3b32878b7460cb284a4a548077dd1 = L.circleMarker(
                 [42.339897,-71.08976],
                 {
@@ -2193,20 +2196,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_fb56acc46d874aac80059e0736e3004a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_9c28407f54f64bf68d28efe507db5dce = $('<div id="html_9c28407f54f64bf68d28efe507db5dce" style="width: 100.0%; height: 100.0%;">Edward M. Kennedy Academy for Health Careers (Horace Mann Charter) (District): Edward M. Kennedy Academy for Health Careers (Horace Mann Charter School) (Percent Staff Members of Color: 54.6% | School Leader of Color? True)</div>')[0];
                 popup_fb56acc46d874aac80059e0736e3004a.setContent(html_9c28407f54f64bf68d28efe507db5dce);
-            
+
 
             circle_marker_fba3b32878b7460cb284a4a548077dd1.bindPopup(popup_fb56acc46d874aac80059e0736e3004a);
 
-            
-        
-    
+
+
+
             var circle_marker_2785e753673e4a9bb5d96af77715100a = L.circleMarker(
                 [42.348755,-71.06803],
                 {
@@ -2226,20 +2229,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_1f4eda37e3c64bac97d3b18f58279fae = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b00785a0b64a41e2bb5dab3b3e739d1d = $('<div id="html_b00785a0b64a41e2bb5dab3b3e739d1d" style="width: 100.0%; height: 100.0%;">Boston: Boston Adult Academy (Percent Staff Members of Color: 73.9% | School Leader of Color? True)</div>')[0];
                 popup_1f4eda37e3c64bac97d3b18f58279fae.setContent(html_b00785a0b64a41e2bb5dab3b3e739d1d);
-            
+
 
             circle_marker_2785e753673e4a9bb5d96af77715100a.bindPopup(popup_1f4eda37e3c64bac97d3b18f58279fae);
 
-            
-        
-    
+
+
+
             var circle_marker_ed717245ad6f44c5a93afb912418e556 = L.circleMarker(
                 [42.34841,-71.06931],
                 {
@@ -2259,20 +2262,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_0db671d2cd6743b2b96a61ed9b1283e4 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b6b8bb7d31ec41aab0e950360b75bbb4 = $('<div id="html_b6b8bb7d31ec41aab0e950360b75bbb4" style="width: 100.0%; height: 100.0%;">Boston: Quincy Upper School (Percent Staff Members of Color: 59.7% | School Leader of Color? True)</div>')[0];
                 popup_0db671d2cd6743b2b96a61ed9b1283e4.setContent(html_b6b8bb7d31ec41aab0e950360b75bbb4);
-            
+
 
             circle_marker_ed717245ad6f44c5a93afb912418e556.bindPopup(popup_0db671d2cd6743b2b96a61ed9b1283e4);
 
-            
-        
-    
+
+
+
             var circle_marker_8746c9e620204d5c961f3397692dbcc4 = L.circleMarker(
                 [42.350838,-71.07792],
                 {
@@ -2292,20 +2295,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_f419a19af6c54d65b9bee3166c146f22 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_1d1f16c2a1e041d7abe4ccb19ebf6f0d = $('<div id="html_1d1f16c2a1e041d7abe4ccb19ebf6f0d" style="width: 100.0%; height: 100.0%;">Boston: Snowden International School at Copley (Percent Staff Members of Color: 32.7% | School Leader of Color? False)</div>')[0];
                 popup_f419a19af6c54d65b9bee3166c146f22.setContent(html_1d1f16c2a1e041d7abe4ccb19ebf6f0d);
-            
+
 
             circle_marker_8746c9e620204d5c961f3397692dbcc4.bindPopup(popup_f419a19af6c54d65b9bee3166c146f22);
 
-            
-        
-    
+
+
+
             var circle_marker_da0fb1a2fe6a437b9e5064ff11e2213a = L.circleMarker(
                 [42.341248,-71.07213],
                 {
@@ -2325,20 +2328,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d30906f545ba42d988a17a3e02f23cbf = L.popup({maxWidth: '300'});
 
-            
+
                 var html_7fbff1356acd4b7ca8be74d8341ee9cc = $('<div id="html_7fbff1356acd4b7ca8be74d8341ee9cc" style="width: 100.0%; height: 100.0%;">Boston: Blackstone (Percent Staff Members of Color: 44.2% | School Leader of Color? False)</div>')[0];
                 popup_d30906f545ba42d988a17a3e02f23cbf.setContent(html_7fbff1356acd4b7ca8be74d8341ee9cc);
-            
+
 
             circle_marker_da0fb1a2fe6a437b9e5064ff11e2213a.bindPopup(popup_d30906f545ba42d988a17a3e02f23cbf);
 
-            
-        
-    
+
+
+
             var circle_marker_6e57769a2563413ea6b5989238fefa5e = L.circleMarker(
                 [42.31651,-71.09319],
                 {
@@ -2358,20 +2361,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_89fba64c7af4442cb0ba82716e09bb6e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b867149bfebe48bd96978dc65cf232a7 = $('<div id="html_b867149bfebe48bd96978dc65cf232a7" style="width: 100.0%; height: 100.0%;">Boston: David A Ellis (Percent Staff Members of Color: 79.9% | School Leader of Color? True)</div>')[0];
                 popup_89fba64c7af4442cb0ba82716e09bb6e.setContent(html_b867149bfebe48bd96978dc65cf232a7);
-            
+
 
             circle_marker_6e57769a2563413ea6b5989238fefa5e.bindPopup(popup_89fba64c7af4442cb0ba82716e09bb6e);
 
-            
-        
-    
+
+
+
             var circle_marker_38519a7e90ba49ab9e1cd8757b5f02b7 = L.circleMarker(
                 [42.314255,-71.099045],
                 {
@@ -2391,20 +2394,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_a7f71ee0825c423c8abfc667c8b27fb3 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_29d4532e87cd4f9daa7b245adc0aaa18 = $('<div id="html_29d4532e87cd4f9daa7b245adc0aaa18" style="width: 100.0%; height: 100.0%;">Boston: Greater Egleston Community High School (Percent Staff Members of Color: 75.2% | School Leader of Color? True)</div>')[0];
                 popup_a7f71ee0825c423c8abfc667c8b27fb3.setContent(html_29d4532e87cd4f9daa7b245adc0aaa18);
-            
+
 
             circle_marker_38519a7e90ba49ab9e1cd8757b5f02b7.bindPopup(popup_a7f71ee0825c423c8abfc667c8b27fb3);
 
-            
-        
-    
+
+
+
             var circle_marker_41f01d1e03064f34ada20abb296a7270 = L.circleMarker(
                 [42.315186,-71.078514],
                 {
@@ -2424,20 +2427,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_750751894a2044b9a8910fea23a2af14 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_06653a51f0a54adc9f9ce13c78a4379a = $('<div id="html_06653a51f0a54adc9f9ce13c78a4379a" style="width: 100.0%; height: 100.0%;">Boston: Haynes Early Education Center (Percent Staff Members of Color: 70.9% | School Leader of Color? True)</div>')[0];
                 popup_750751894a2044b9a8910fea23a2af14.setContent(html_06653a51f0a54adc9f9ce13c78a4379a);
-            
+
 
             circle_marker_41f01d1e03064f34ada20abb296a7270.bindPopup(popup_750751894a2044b9a8910fea23a2af14);
 
-            
-        
-    
+
+
+
             var circle_marker_86334135a5cd4a838aba0b9be5b797f2 = L.circleMarker(
                 [42.32144,-71.08559],
                 {
@@ -2457,20 +2460,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d2724130945d47e8a7f3f26600a40ddf = L.popup({maxWidth: '300'});
 
-            
+
                 var html_18351351a4a949398a829648d2aa604a = $('<div id="html_18351351a4a949398a829648d2aa604a" style="width: 100.0%; height: 100.0%;">Boston: Higginson/Lewis K-8 (Percent Staff Members of Color: 64.9% | School Leader of Color? True)</div>')[0];
                 popup_d2724130945d47e8a7f3f26600a40ddf.setContent(html_18351351a4a949398a829648d2aa604a);
-            
+
 
             circle_marker_86334135a5cd4a838aba0b9be5b797f2.bindPopup(popup_d2724130945d47e8a7f3f26600a40ddf);
 
-            
-        
-    
+
+
+
             var circle_marker_d8e877093e9d4097b6aa7e6883672f44 = L.circleMarker(
                 [42.330055,-71.09139],
                 {
@@ -2490,20 +2493,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_f7524a2915e2495f87c56da314e9e0a3 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b4f5637a97bc4bf5ba4c74aa8f7d103d = $('<div id="html_b4f5637a97bc4bf5ba4c74aa8f7d103d" style="width: 100.0%; height: 100.0%;">Boston: James P Timilty Middle (Percent Staff Members of Color: 49.1% | School Leader of Color? True)</div>')[0];
                 popup_f7524a2915e2495f87c56da314e9e0a3.setContent(html_b4f5637a97bc4bf5ba4c74aa8f7d103d);
-            
+
 
             circle_marker_d8e877093e9d4097b6aa7e6883672f44.bindPopup(popup_f7524a2915e2495f87c56da314e9e0a3);
 
-            
-        
-    
+
+
+
             var circle_marker_5c4b041341f74df395d6ff8ae4fc0f07 = L.circleMarker(
                 [42.32519,-71.091194],
                 {
@@ -2523,20 +2526,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_6e43ae1eb1714374af1fb8bfa3e3f9c9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_86bf68da8653429ba566df8f51cef730 = $('<div id="html_86bf68da8653429ba566df8f51cef730" style="width: 100.0%; height: 100.0%;">Boston: Nathan Hale (Percent Staff Members of Color: 45.9% | School Leader of Color? True)</div>')[0];
                 popup_6e43ae1eb1714374af1fb8bfa3e3f9c9.setContent(html_86bf68da8653429ba566df8f51cef730);
-            
+
 
             circle_marker_5c4b041341f74df395d6ff8ae4fc0f07.bindPopup(popup_6e43ae1eb1714374af1fb8bfa3e3f9c9);
 
-            
-        
-    
+
+
+
             var circle_marker_4bcc6fa4149843d1a05916d3cb0e80fb = L.circleMarker(
                 [42.330524,-71.078064],
                 {
@@ -2556,20 +2559,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c7ac317e19c64e61b4b7646d3bd71a42 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_21c2cf1dcd914b6b8dad0c81ce633c8e = $('<div id="html_21c2cf1dcd914b6b8dad0c81ce633c8e" style="width: 100.0%; height: 100.0%;">Boston: Orchard Gardens (Percent Staff Members of Color: 46.0% | School Leader of Color? False)</div>')[0];
                 popup_c7ac317e19c64e61b4b7646d3bd71a42.setContent(html_21c2cf1dcd914b6b8dad0c81ce633c8e);
-            
+
 
             circle_marker_4bcc6fa4149843d1a05916d3cb0e80fb.bindPopup(popup_c7ac317e19c64e61b4b7646d3bd71a42);
 
-            
-        
-    
+
+
+
             var circle_marker_7d97e94d8d6e40a18e0b861c099fe304 = L.circleMarker(
                 [42.313847,-71.09838],
                 {
@@ -2589,20 +2592,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_666170189ea84601b0eedb14529fee1d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ce64fda3fffa45b095370c7e28bc2d51 = $('<div id="html_ce64fda3fffa45b095370c7e28bc2d51" style="width: 100.0%; height: 100.0%;">Boston: Rafael Hernandez (Percent Staff Members of Color: 71.9% | School Leader of Color? True)</div>')[0];
                 popup_666170189ea84601b0eedb14529fee1d.setContent(html_ce64fda3fffa45b095370c7e28bc2d51);
-            
+
 
             circle_marker_7d97e94d8d6e40a18e0b861c099fe304.bindPopup(popup_666170189ea84601b0eedb14529fee1d);
 
-            
-        
-    
+
+
+
             var circle_marker_32daa68254b94215a0f8e31b58666ae0 = L.circleMarker(
                 [42.325245,-71.069374],
                 {
@@ -2622,20 +2625,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_0afd1c3df8eb4681babe989dfa6cc4ba = L.popup({maxWidth: '300'});
 
-            
+
                 var html_858ec40354e643e0b3fba240e130375f = $('<div id="html_858ec40354e643e0b3fba240e130375f" style="width: 100.0%; height: 100.0%;">Boston: Samuel W Mason (Percent Staff Members of Color: 61.7% | School Leader of Color? True)</div>')[0];
                 popup_0afd1c3df8eb4681babe989dfa6cc4ba.setContent(html_858ec40354e643e0b3fba240e130375f);
-            
+
 
             circle_marker_32daa68254b94215a0f8e31b58666ae0.bindPopup(popup_0afd1c3df8eb4681babe989dfa6cc4ba);
 
-            
-        
-    
+
+
+
             var circle_marker_7d92e7168f5b4541a551b0fd1248ef4f = L.circleMarker(
                 [42.32746,-71.0826],
                 {
@@ -2655,20 +2658,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_69c24d92c33a44259e8760d2174cf8bc = L.popup({maxWidth: '300'});
 
-            
+
                 var html_59fd0fa887984d7298be7c9988403565 = $('<div id="html_59fd0fa887984d7298be7c9988403565" style="width: 100.0%; height: 100.0%;">Boston Day and Evening Academy Charter (District): Boston Day and Evening Academy Charter School (Percent Staff Members of Color: 45.0% | School Leader of Color? True)</div>')[0];
                 popup_69c24d92c33a44259e8760d2174cf8bc.setContent(html_59fd0fa887984d7298be7c9988403565);
-            
+
 
             circle_marker_7d92e7168f5b4541a551b0fd1248ef4f.bindPopup(popup_69c24d92c33a44259e8760d2174cf8bc);
 
-            
-        
-    
+
+
+
             var circle_marker_a237f83c573f4b37a304469ffed102eb = L.circleMarker(
                 [42.323906,-71.08685],
                 {
@@ -2688,20 +2691,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_4e1816dc2df64efcb1ff4cacaf3dd75e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_0b41a0570cad49f49218ddb0e9955621 = $('<div id="html_0b41a0570cad49f49218ddb0e9955621" style="width: 100.0%; height: 100.0%;">City on a Hill Charter Public School Circuit Street (District): City on a Hill Charter Public School Circuit Street (Percent Staff Members of Color: 23.9% | School Leader of Color? True)</div>')[0];
                 popup_4e1816dc2df64efcb1ff4cacaf3dd75e.setContent(html_0b41a0570cad49f49218ddb0e9955621);
-            
+
 
             circle_marker_a237f83c573f4b37a304469ffed102eb.bindPopup(popup_4e1816dc2df64efcb1ff4cacaf3dd75e);
 
-            
-        
-    
+
+
+
             var circle_marker_5fef8caca14e418082284b7d3603f8f9 = L.circleMarker(
                 [42.323246,-71.07305],
                 {
@@ -2721,20 +2724,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_010dcfddb0914775b5de900ab7e2feaf = L.popup({maxWidth: '300'});
 
-            
+
                 var html_3a1983a3553244b990612fc2dd299f3b = $('<div id="html_3a1983a3553244b990612fc2dd299f3b" style="width: 100.0%; height: 100.0%;">Dudley Street Neighborhood Charter School (District): Dudley Street Neighborhood Charter School (Percent Staff Members of Color: 63.0% | School Leader of Color? True)</div>')[0];
                 popup_010dcfddb0914775b5de900ab7e2feaf.setContent(html_3a1983a3553244b990612fc2dd299f3b);
-            
+
 
             circle_marker_5fef8caca14e418082284b7d3603f8f9.bindPopup(popup_010dcfddb0914775b5de900ab7e2feaf);
 
-            
-        
-    
+
+
+
             var circle_marker_96ec08c7ea0440779efb079c3babebba = L.circleMarker(
                 [42.31762,-71.09137],
                 {
@@ -2754,20 +2757,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_4e1b4f20dc844b86a83c3a3298e93d64 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_8f644b828e934edba48aa3a2e8130519 = $('<div id="html_8f644b828e934edba48aa3a2e8130519" style="width: 100.0%; height: 100.0%;">Boston: Higginson (Percent Staff Members of Color: 57.9% | School Leader of Color? False)</div>')[0];
                 popup_4e1b4f20dc844b86a83c3a3298e93d64.setContent(html_8f644b828e934edba48aa3a2e8130519);
-            
+
 
             circle_marker_96ec08c7ea0440779efb079c3babebba.bindPopup(popup_4e1b4f20dc844b86a83c3a3298e93d64);
 
-            
-        
-    
+
+
+
             var circle_marker_3ecf7d771502428fa1ad73de22a44f95 = L.circleMarker(
                 [42.331234,-71.08254],
                 {
@@ -2787,20 +2790,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_354f16091729474083f199b0b096985d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_f0896da293bf43efb523ed2eeee8f439 = $('<div id="html_f0896da293bf43efb523ed2eeee8f439" style="width: 100.0%; height: 100.0%;">City on a Hill Charter Public School Dudley Square (District): City on a Hill Charter Public School Dudley Square (Percent Staff Members of Color: 30.8% | School Leader of Color? True)</div>')[0];
                 popup_354f16091729474083f199b0b096985d.setContent(html_f0896da293bf43efb523ed2eeee8f439);
-            
+
 
             circle_marker_3ecf7d771502428fa1ad73de22a44f95.bindPopup(popup_354f16091729474083f199b0b096985d);
 
-            
-        
-    
+
+
+
             var circle_marker_2969645582eb45c89cde8712572e22ca = L.circleMarker(
                 [42.331005,-71.100555],
                 {
@@ -2820,20 +2823,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_de0d3e0d346a4745b18105030015ce62 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_26a0988f79dc4bd68a3a8e1c71e054ba = $('<div id="html_26a0988f79dc4bd68a3a8e1c71e054ba" style="width: 100.0%; height: 100.0%;">Boston: Fenway High School (Percent Staff Members of Color: 57.6% | School Leader of Color? True)</div>')[0];
                 popup_de0d3e0d346a4745b18105030015ce62.setContent(html_26a0988f79dc4bd68a3a8e1c71e054ba);
-            
+
 
             circle_marker_2969645582eb45c89cde8712572e22ca.bindPopup(popup_de0d3e0d346a4745b18105030015ce62);
 
-            
-        
-    
+
+
+
             var circle_marker_eda46389ba3a43a9947b5c0c7ad4f2f6 = L.circleMarker(
                 [42.306896,-71.082146],
                 {
@@ -2853,20 +2856,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b709a4123a26420da7d99a114336c0d9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_e7ab4704b286491293e103e6b98408a3 = $('<div id="html_e7ab4704b286491293e103e6b98408a3" style="width: 100.0%; height: 100.0%;">Boston: Dearborn (Percent Staff Members of Color: 66.7% | School Leader of Color? True)</div>')[0];
                 popup_b709a4123a26420da7d99a114336c0d9.setContent(html_e7ab4704b286491293e103e6b98408a3);
-            
+
 
             circle_marker_eda46389ba3a43a9947b5c0c7ad4f2f6.bindPopup(popup_b709a4123a26420da7d99a114336c0d9);
 
-            
-        
-    
+
+
+
             var circle_marker_551b66efe13b4e37bad34f0a425f0749 = L.circleMarker(
                 [42.306896,-71.082146],
                 {
@@ -2886,20 +2889,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d9a45443af9b4638b8d8e7759c1ed213 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_c73af5056050497685ebd170450d637f = $('<div id="html_c73af5056050497685ebd170450d637f" style="width: 100.0%; height: 100.0%;">Boston: Jeremiah E Burke High (Percent Staff Members of Color: 57.6% | School Leader of Color? True)</div>')[0];
                 popup_d9a45443af9b4638b8d8e7759c1ed213.setContent(html_c73af5056050497685ebd170450d637f);
-            
+
 
             circle_marker_551b66efe13b4e37bad34f0a425f0749.bindPopup(popup_d9a45443af9b4638b8d8e7759c1ed213);
 
-            
-        
-    
+
+
+
             var circle_marker_52a9d50d08e04855bb2e1d3cd195c810 = L.circleMarker(
                 [42.305355,-71.073296],
                 {
@@ -2919,20 +2922,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_0b9c9b59cfad449dae6b7eb719fadd9d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_43d07ae71f034526852c9d45083214fa = $('<div id="html_43d07ae71f034526852c9d45083214fa" style="width: 100.0%; height: 100.0%;">Boston: UP Academy Holland (Percent Staff Members of Color: 48.9% | School Leader of Color? True)</div>')[0];
                 popup_0b9c9b59cfad449dae6b7eb719fadd9d.setContent(html_43d07ae71f034526852c9d45083214fa);
-            
+
 
             circle_marker_52a9d50d08e04855bb2e1d3cd195c810.bindPopup(popup_0b9c9b59cfad449dae6b7eb719fadd9d);
 
-            
-        
-    
+
+
+
             var circle_marker_ac16ad3e9181463aa1e1e1310bfabb80 = L.circleMarker(
                 [42.311443,-71.07596],
                 {
@@ -2952,20 +2955,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_1221b2bf1417456da80ffbe6ab2910a8 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b427e8e0c9e6431e8a19bedeb7eb3ca5 = $('<div id="html_b427e8e0c9e6431e8a19bedeb7eb3ca5" style="width: 100.0%; height: 100.0%;">Boston: King K-8 (Percent Staff Members of Color: 55.5% | School Leader of Color? True)</div>')[0];
                 popup_1221b2bf1417456da80ffbe6ab2910a8.setContent(html_b427e8e0c9e6431e8a19bedeb7eb3ca5);
-            
+
 
             circle_marker_ac16ad3e9181463aa1e1e1310bfabb80.bindPopup(popup_1221b2bf1417456da80ffbe6ab2910a8);
 
-            
-        
-    
+
+
+
             var circle_marker_40940d63b4c34c1da8be1445608ba03d = L.circleMarker(
                 [42.308697,-71.07466],
                 {
@@ -2985,20 +2988,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_05641c3a7d1243039a0d9eae59b9a69f = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d9807072a6d748f38645dc3627faae55 = $('<div id="html_d9807072a6d748f38645dc3627faae55" style="width: 100.0%; height: 100.0%;">Boston: Lilla G. Frederick Middle School (Percent Staff Members of Color: 68.6% | School Leader of Color? True)</div>')[0];
                 popup_05641c3a7d1243039a0d9eae59b9a69f.setContent(html_d9807072a6d748f38645dc3627faae55);
-            
+
 
             circle_marker_40940d63b4c34c1da8be1445608ba03d.bindPopup(popup_05641c3a7d1243039a0d9eae59b9a69f);
 
-            
-        
-    
+
+
+
             var circle_marker_33c34b28a7da4d918084739249024eda = L.circleMarker(
                 [42.296806,-71.08062],
                 {
@@ -3018,20 +3021,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_53c3462388774d36a9db0a1aa2b0b8b6 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_67d9b2bc42e7464080352e16507e7ef8 = $('<div id="html_67d9b2bc42e7464080352e16507e7ef8" style="width: 100.0%; height: 100.0%;">Boston: Sarah Greenwood (Percent Staff Members of Color: 61.1% | School Leader of Color? True)</div>')[0];
                 popup_53c3462388774d36a9db0a1aa2b0b8b6.setContent(html_67d9b2bc42e7464080352e16507e7ef8);
-            
+
 
             circle_marker_33c34b28a7da4d918084739249024eda.bindPopup(popup_53c3462388774d36a9db0a1aa2b0b8b6);
 
-            
-        
-    
+
+
+
             var circle_marker_4827bd2bced34d45a2c9b3d147a3250f = L.circleMarker(
                 [42.315735,-71.087425],
                 {
@@ -3051,20 +3054,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_6508582e11414189bf7d4c888cc4d2b8 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_c61dcd7b3f184211a304b0beb2ec14f8 = $('<div id="html_c61dcd7b3f184211a304b0beb2ec14f8" style="width: 100.0%; height: 100.0%;">Boston: William Monroe Trotter (Percent Staff Members of Color: 48.5% | School Leader of Color? True)</div>')[0];
                 popup_6508582e11414189bf7d4c888cc4d2b8.setContent(html_c61dcd7b3f184211a304b0beb2ec14f8);
-            
+
 
             circle_marker_4827bd2bced34d45a2c9b3d147a3250f.bindPopup(popup_6508582e11414189bf7d4c888cc4d2b8);
 
-            
-        
-    
+
+
+
             var circle_marker_3657b5ad7e0c42a5a857e9c9429c1783 = L.circleMarker(
                 [42.30119,-71.08564],
                 {
@@ -3084,20 +3087,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_ee0ecc6d513f478baa89d08816ead29b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_99216d18cca0455bb66ae531a1d941a4 = $('<div id="html_99216d18cca0455bb66ae531a1d941a4" style="width: 100.0%; height: 100.0%;">Bridge Boston Charter School (District): Bridge Boston Charter School (Percent Staff Members of Color: 33.8% | School Leader of Color? False)</div>')[0];
                 popup_ee0ecc6d513f478baa89d08816ead29b.setContent(html_99216d18cca0455bb66ae531a1d941a4);
-            
+
 
             circle_marker_3657b5ad7e0c42a5a857e9c9429c1783.bindPopup(popup_ee0ecc6d513f478baa89d08816ead29b);
 
-            
-        
-    
+
+
+
             var circle_marker_cc3f60f2347c4dd897f47fd6b0c3c286 = L.circleMarker(
                 [42.30061,-71.06133],
                 {
@@ -3117,20 +3120,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_13156cfd554e4f68a6703ef9f5781fe0 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_dd2846ad128443dc9805fda714983f5e = $('<div id="html_dd2846ad128443dc9805fda714983f5e" style="width: 100.0%; height: 100.0%;">Boston: Community Academy of Science and Health (Percent Staff Members of Color: 59.1% | School Leader of Color? True)</div>')[0];
                 popup_13156cfd554e4f68a6703ef9f5781fe0.setContent(html_dd2846ad128443dc9805fda714983f5e);
-            
+
 
             circle_marker_cc3f60f2347c4dd897f47fd6b0c3c286.bindPopup(popup_13156cfd554e4f68a6703ef9f5781fe0);
 
-            
-        
-    
+
+
+
             var circle_marker_4aee5d85ab7e415ab0b1e85aab43e5ea = L.circleMarker(
                 [42.307976,-71.062515],
                 {
@@ -3150,20 +3153,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_9c6d753f2e9d408e96f52aecd8e21bf9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_025f198123254feb8cb7da096d5b8c1e = $('<div id="html_025f198123254feb8cb7da096d5b8c1e" style="width: 100.0%; height: 100.0%;">Boston: Mather (Percent Staff Members of Color: 58.8% | School Leader of Color? False)</div>')[0];
                 popup_9c6d753f2e9d408e96f52aecd8e21bf9.setContent(html_025f198123254feb8cb7da096d5b8c1e);
-            
+
 
             circle_marker_4aee5d85ab7e415ab0b1e85aab43e5ea.bindPopup(popup_9c6d753f2e9d408e96f52aecd8e21bf9);
 
-            
-        
-    
+
+
+
             var circle_marker_df9fdfd3924c4e169c9aef98a7ecfdbb = L.circleMarker(
                 [42.286724,-71.0535],
                 {
@@ -3183,20 +3186,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c269c7fc720649e7bcdf2798b662f8fa = L.popup({maxWidth: '300'});
 
-            
+
                 var html_715aabc7f0f04a9fb8b23985fb2b2c3d = $('<div id="html_715aabc7f0f04a9fb8b23985fb2b2c3d" style="width: 100.0%; height: 100.0%;">Boston: Thomas J Kenny (Percent Staff Members of Color: 38.6% | School Leader of Color? False)</div>')[0];
                 popup_c269c7fc720649e7bcdf2798b662f8fa.setContent(html_715aabc7f0f04a9fb8b23985fb2b2c3d);
-            
+
 
             circle_marker_df9fdfd3924c4e169c9aef98a7ecfdbb.bindPopup(popup_c269c7fc720649e7bcdf2798b662f8fa);
 
-            
-        
-    
+
+
+
             var circle_marker_9c3ffaa4e0b545afacf53670af14f828 = L.circleMarker(
                 [42.301426,-71.0589],
                 {
@@ -3216,20 +3219,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c8f205b2296642f7adbe529a540c1d05 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_db58bbff4b95406685cbcd4bfd0e8646 = $('<div id="html_db58bbff4b95406685cbcd4bfd0e8646" style="width: 100.0%; height: 100.0%;">Helen Y. Davis Leadership Academy Charter Public (District): Helen Y. Davis Leadership Academy Charter Public School (Percent Staff Members of Color: 74.7% | School Leader of Color? True)</div>')[0];
                 popup_c8f205b2296642f7adbe529a540c1d05.setContent(html_db58bbff4b95406685cbcd4bfd0e8646);
-            
+
 
             circle_marker_9c3ffaa4e0b545afacf53670af14f828.bindPopup(popup_c8f205b2296642f7adbe529a540c1d05);
 
-            
-        
-    
+
+
+
             var circle_marker_2db3d17fa02040f0b43e85998319c527 = L.circleMarker(
                 [42.281708,-71.080376],
                 {
@@ -3249,20 +3252,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_f5339aa92c4d4ba6a8e0c86f1eff18ad = L.popup({maxWidth: '300'});
 
-            
+
                 var html_70caf09d6ac2481492ac96b890910d2c = $('<div id="html_70caf09d6ac2481492ac96b890910d2c" style="width: 100.0%; height: 100.0%;">Boston: Boston International High School (Percent Staff Members of Color: 55.3% | School Leader of Color? False)</div>')[0];
                 popup_f5339aa92c4d4ba6a8e0c86f1eff18ad.setContent(html_70caf09d6ac2481492ac96b890910d2c);
-            
+
 
             circle_marker_2db3d17fa02040f0b43e85998319c527.bindPopup(popup_f5339aa92c4d4ba6a8e0c86f1eff18ad);
 
-            
-        
-    
+
+
+
             var circle_marker_31cdb4087b1e4b37bea8b089818bb0a8 = L.circleMarker(
                 [42.292465,-71.07964],
                 {
@@ -3282,20 +3285,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_287084b9569a48d5a43e64e5a114594b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ceb636b5c61748db9d05d95ff52804dd = $('<div id="html_ceb636b5c61748db9d05d95ff52804dd" style="width: 100.0%; height: 100.0%;">Boston: Joseph Lee (Percent Staff Members of Color: 44.5% | School Leader of Color? True)</div>')[0];
                 popup_287084b9569a48d5a43e64e5a114594b.setContent(html_ceb636b5c61748db9d05d95ff52804dd);
-            
+
 
             circle_marker_31cdb4087b1e4b37bea8b089818bb0a8.bindPopup(popup_287084b9569a48d5a43e64e5a114594b);
 
-            
-        
-    
+
+
+
             var circle_marker_27ecaea8ca4e4458a0bdfbd46022f28a = L.circleMarker(
                 [42.286434,-71.072174],
                 {
@@ -3315,20 +3318,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_8b8b7277b0174163a2bc7b534d9886a5 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_8d5bc8f6b4f841fc98e68b101b0fc7c4 = $('<div id="html_8d5bc8f6b4f841fc98e68b101b0fc7c4" style="width: 100.0%; height: 100.0%;">Boston: Lee Academy (Percent Staff Members of Color: 58.3% | School Leader of Color? True)</div>')[0];
                 popup_8b8b7277b0174163a2bc7b534d9886a5.setContent(html_8d5bc8f6b4f841fc98e68b101b0fc7c4);
-            
+
 
             circle_marker_27ecaea8ca4e4458a0bdfbd46022f28a.bindPopup(popup_8b8b7277b0174163a2bc7b534d9886a5);
 
-            
-        
-    
+
+
+
             var circle_marker_11086b627ec44f80a9426ea05c2207ac = L.circleMarker(
                 [42.29686,-71.07532],
                 {
@@ -3348,20 +3351,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_7e73c9e7622849628e1ef2b95c573cd0 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d1a6af4fc3b048c19094a25154ade091 = $('<div id="html_d1a6af4fc3b048c19094a25154ade091" style="width: 100.0%; height: 100.0%;">Boston: O W Holmes (Percent Staff Members of Color: 61.7% | School Leader of Color? True)</div>')[0];
                 popup_7e73c9e7622849628e1ef2b95c573cd0.setContent(html_d1a6af4fc3b048c19094a25154ade091);
-            
+
 
             circle_marker_11086b627ec44f80a9426ea05c2207ac.bindPopup(popup_7e73c9e7622849628e1ef2b95c573cd0);
 
-            
-        
-    
+
+
+
             var circle_marker_c9004b6a6763426dbb8e390eefc8c087 = L.circleMarker(
                 [42.289474,-71.071365],
                 {
@@ -3381,20 +3384,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_55d6ef80e253410685553a38781d9501 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_3b0f7405674c471b92da76ccfd5830f6 = $('<div id="html_3b0f7405674c471b92da76ccfd5830f6" style="width: 100.0%; height: 100.0%;">Codman Academy Charter Public (District): Codman Academy Charter Public School (Percent Staff Members of Color: 43.5% | School Leader of Color? True)</div>')[0];
                 popup_55d6ef80e253410685553a38781d9501.setContent(html_3b0f7405674c471b92da76ccfd5830f6);
-            
+
 
             circle_marker_c9004b6a6763426dbb8e390eefc8c087.bindPopup(popup_55d6ef80e253410685553a38781d9501);
 
-            
-        
-    
+
+
+
             var circle_marker_d619b044b84a44cc847f5b04b745a557 = L.circleMarker(
                 [42.28791,-71.07667],
                 {
@@ -3414,20 +3417,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_00938f81acd3437f99628dc7a99b5180 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_59ff062a006b490dabc4c9c4ac6eeff4 = $('<div id="html_59ff062a006b490dabc4c9c4ac6eeff4" style="width: 100.0%; height: 100.0%;">Boston: TechBoston Academy (Percent Staff Members of Color: 36.0% | School Leader of Color? True)</div>')[0];
                 popup_00938f81acd3437f99628dc7a99b5180.setContent(html_59ff062a006b490dabc4c9c4ac6eeff4);
-            
+
 
             circle_marker_d619b044b84a44cc847f5b04b745a557.bindPopup(popup_00938f81acd3437f99628dc7a99b5180);
 
-            
-        
-    
+
+
+
             var circle_marker_34a6b9c21ca649fd9e2e4f0e81200f26 = L.circleMarker(
                 [42.300117,-71.07089],
                 {
@@ -3447,20 +3450,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_cd8b6d6b4b0045ef8a31c1514cf47e67 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_dc22fea0bc43404093248720f9284f83 = $('<div id="html_dc22fea0bc43404093248720f9284f83" style="width: 100.0%; height: 100.0%;">UP Academy Charter School of Dorchester (District): UP Academy Charter School of Dorchester (Percent Staff Members of Color: 29.2% | School Leader of Color? True)</div>')[0];
                 popup_cd8b6d6b4b0045ef8a31c1514cf47e67.setContent(html_dc22fea0bc43404093248720f9284f83);
-            
+
 
             circle_marker_34a6b9c21ca649fd9e2e4f0e81200f26.bindPopup(popup_cd8b6d6b4b0045ef8a31c1514cf47e67);
 
-            
-        
-    
+
+
+
             var circle_marker_3f0758d191754606b93bd07b3162c14a = L.circleMarker(
                 [42.281666,-71.08697],
                 {
@@ -3480,20 +3483,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_92b60ff820bc40e48175293e7069a3f8 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_dde0c107444c4d4d814abc142f9bc1c5 = $('<div id="html_dde0c107444c4d4d814abc142f9bc1c5" style="width: 100.0%; height: 100.0%;">Boston: Pauline Agassiz Shaw Elementary School (Percent Staff Members of Color: 33.3% | School Leader of Color? 0)</div>')[0];
                 popup_92b60ff820bc40e48175293e7069a3f8.setContent(html_dde0c107444c4d4d814abc142f9bc1c5);
-            
+
 
             circle_marker_3f0758d191754606b93bd07b3162c14a.bindPopup(popup_92b60ff820bc40e48175293e7069a3f8);
 
-            
-        
-    
+
+
+
             var circle_marker_4b7b3dca20df4c81a814f329e03e7929 = L.circleMarker(
                 [42.30061,-71.06133],
                 {
@@ -3513,20 +3516,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b87dc33c6dbf4ba4b107aca89b45827d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_52e9ad8cc9c54b5ba72e6ec51c6bde10 = $('<div id="html_52e9ad8cc9c54b5ba72e6ec51c6bde10" style="width: 100.0%; height: 100.0%;">Boston: Dorchester Academy (Percent Staff Members of Color: 40.8% | School Leader of Color? True)</div>')[0];
                 popup_b87dc33c6dbf4ba4b107aca89b45827d.setContent(html_52e9ad8cc9c54b5ba72e6ec51c6bde10);
-            
+
 
             circle_marker_4b7b3dca20df4c81a814f329e03e7929.bindPopup(popup_b87dc33c6dbf4ba4b107aca89b45827d);
 
-            
-        
-    
+
+
+
             var circle_marker_80ba8ae204c64be284f75de9a52286da = L.circleMarker(
                 [42.31423,-71.05994],
                 {
@@ -3546,20 +3549,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_be1898f5c56c486b9078c8709cc07ec9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_4e03753541ac4fc6a5219da2859cfd7b = $('<div id="html_4e03753541ac4fc6a5219da2859cfd7b" style="width: 100.0%; height: 100.0%;">Boston: Edward Everett (Percent Staff Members of Color: 33.3% | School Leader of Color? False)</div>')[0];
                 popup_be1898f5c56c486b9078c8709cc07ec9.setContent(html_4e03753541ac4fc6a5219da2859cfd7b);
-            
+
 
             circle_marker_80ba8ae204c64be284f75de9a52286da.bindPopup(popup_be1898f5c56c486b9078c8709cc07ec9);
 
-            
-        
-    
+
+
+
             var circle_marker_44112daa62774ffa9c14b7048029c7c8 = L.circleMarker(
                 [42.318977,-71.04567],
                 {
@@ -3579,20 +3582,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_5be63425533c4e87bc79c88afc3091b8 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a400b9deca474e43a06765cca439785f = $('<div id="html_a400b9deca474e43a06765cca439785f" style="width: 100.0%; height: 100.0%;">Boston: John W McCormack (Percent Staff Members of Color: 44.9% | School Leader of Color? True)</div>')[0];
                 popup_5be63425533c4e87bc79c88afc3091b8.setContent(html_a400b9deca474e43a06765cca439785f);
-            
+
 
             circle_marker_44112daa62774ffa9c14b7048029c7c8.bindPopup(popup_5be63425533c4e87bc79c88afc3091b8);
 
-            
-        
-    
+
+
+
             var circle_marker_419430070e104549bea44084101add8e = L.circleMarker(
                 [42.318405,-71.07535],
                 {
@@ -3612,20 +3615,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_48e035413fd54f5b99fe7a5ec8858d9d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_c49df8b21fba4ea59de912c04ec37e76 = $('<div id="html_c49df8b21fba4ea59de912c04ec37e76" style="width: 100.0%; height: 100.0%;">Boston: John Winthrop (Percent Staff Members of Color: 54.3% | School Leader of Color? True)</div>')[0];
                 popup_48e035413fd54f5b99fe7a5ec8858d9d.setContent(html_c49df8b21fba4ea59de912c04ec37e76);
-            
+
 
             circle_marker_419430070e104549bea44084101add8e.bindPopup(popup_48e035413fd54f5b99fe7a5ec8858d9d);
 
-            
-        
-    
+
+
+
             var circle_marker_d3787371a6c94ebfbd88d0d9ee70117e = L.circleMarker(
                 [42.318897,-71.04542],
                 {
@@ -3645,20 +3648,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c46cae01d21349eaa3679ccb84712149 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_9361783d3ec24c01b708b864b2e46022 = $('<div id="html_9361783d3ec24c01b708b864b2e46022" style="width: 100.0%; height: 100.0%;">Boston: Paul A Dever (Percent Staff Members of Color: 44.2% | School Leader of Color? True)</div>')[0];
                 popup_c46cae01d21349eaa3679ccb84712149.setContent(html_9361783d3ec24c01b708b864b2e46022);
-            
+
 
             circle_marker_d3787371a6c94ebfbd88d0d9ee70117e.bindPopup(popup_c46cae01d21349eaa3679ccb84712149);
 
-            
-        
-    
+
+
+
             var circle_marker_a11e584f9b704e27ab22aec2eab8c7ba = L.circleMarker(
                 [42.32001,-71.059395],
                 {
@@ -3678,20 +3681,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_aecb88487d4a4c58aa20ea02568055d7 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_9d805ef2bae24286b12280fd61517003 = $('<div id="html_9d805ef2bae24286b12280fd61517003" style="width: 100.0%; height: 100.0%;">Boston: William E Russell (Percent Staff Members of Color: 44.3% | School Leader of Color? True)</div>')[0];
                 popup_aecb88487d4a4c58aa20ea02568055d7.setContent(html_9d805ef2bae24286b12280fd61517003);
-            
+
 
             circle_marker_a11e584f9b704e27ab22aec2eab8c7ba.bindPopup(popup_aecb88487d4a4c58aa20ea02568055d7);
 
-            
-        
-    
+
+
+
             var circle_marker_d7b7550db6b046deaa090b9ad38d4d29 = L.circleMarker(
                 [42.27741,-71.07765],
                 {
@@ -3711,20 +3714,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_b549aec47d3842539965ee4f1f26912a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_3d03ed0e00bc4cc8a1b9127cf3c9f9df = $('<div id="html_3d03ed0e00bc4cc8a1b9127cf3c9f9df" style="width: 100.0%; height: 100.0%;">Boston: Charles H Taylor (Percent Staff Members of Color: 70.7% | School Leader of Color? True)</div>')[0];
                 popup_b549aec47d3842539965ee4f1f26912a.setContent(html_3d03ed0e00bc4cc8a1b9127cf3c9f9df);
-            
+
 
             circle_marker_d7b7550db6b046deaa090b9ad38d4d29.bindPopup(popup_b549aec47d3842539965ee4f1f26912a);
 
-            
-        
-    
+
+
+
             var circle_marker_4ebf38c53da14bd7be5c46b501fd8eee = L.circleMarker(
                 [42.27189,-71.09213],
                 {
@@ -3744,20 +3747,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_bac5953f882a44e886e80ef0059892c1 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ef2f41d1e0cb45b7aa11042171480ff5 = $('<div id="html_ef2f41d1e0cb45b7aa11042171480ff5" style="width: 100.0%; height: 100.0%;">Boston: Dr. Catherine Ellison-Rosa Parks Early Ed School (Percent Staff Members of Color: 65.9% | School Leader of Color? True)</div>')[0];
                 popup_bac5953f882a44e886e80ef0059892c1.setContent(html_ef2f41d1e0cb45b7aa11042171480ff5);
-            
+
 
             circle_marker_4ebf38c53da14bd7be5c46b501fd8eee.bindPopup(popup_bac5953f882a44e886e80ef0059892c1);
 
-            
-        
-    
+
+
+
             var circle_marker_6482302769a047e6ab2e81792ed74c38 = L.circleMarker(
                 [42.275734,-71.092026],
                 {
@@ -3777,20 +3780,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_5871ca5c846d4e8d8648c72e3a8ea437 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d86b8a23d0c841c0acfde83a12498b35 = $('<div id="html_d86b8a23d0c841c0acfde83a12498b35" style="width: 100.0%; height: 100.0%;">Boston: Mildred Avenue K-8 (Percent Staff Members of Color: 69.2% | School Leader of Color? True)</div>')[0];
                 popup_5871ca5c846d4e8d8648c72e3a8ea437.setContent(html_d86b8a23d0c841c0acfde83a12498b35);
-            
+
 
             circle_marker_6482302769a047e6ab2e81792ed74c38.bindPopup(popup_5871ca5c846d4e8d8648c72e3a8ea437);
 
-            
-        
-    
+
+
+
             var circle_marker_e49ee6b543dc4a4b9cb6c6849855278c = L.circleMarker(
                 [42.28204,-71.09398],
                 {
@@ -3810,20 +3813,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_31cea228e9ff4bd78d3412f3517f36d4 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ae74c929f7cb4d008ca9a96150860772 = $('<div id="html_ae74c929f7cb4d008ca9a96150860772" style="width: 100.0%; height: 100.0%;">Boston: Young Achievers (Percent Staff Members of Color: 65.0% | School Leader of Color? True)</div>')[0];
                 popup_31cea228e9ff4bd78d3412f3517f36d4.setContent(html_ae74c929f7cb4d008ca9a96150860772);
-            
+
 
             circle_marker_e49ee6b543dc4a4b9cb6c6849855278c.bindPopup(popup_31cea228e9ff4bd78d3412f3517f36d4);
 
-            
-        
-    
+
+
+
             var circle_marker_b0070e7460df40a4b996f7fc5c006d8e = L.circleMarker(
                 [42.275295,-71.09231],
                 {
@@ -3843,20 +3846,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_4d1bb5c9408f44fa866c8c838ae6a2ba = L.popup({maxWidth: '300'});
 
-            
+
                 var html_e9734965a25a4a5ab4269782c49c9bda = $('<div id="html_e9734965a25a4a5ab4269782c49c9bda" style="width: 100.0%; height: 100.0%;">KIPP Academy Boston Charter School (District): KIPP Academy Boston Charter School (Percent Staff Members of Color: 31.0% | School Leader of Color? True)</div>')[0];
                 popup_4d1bb5c9408f44fa866c8c838ae6a2ba.setContent(html_e9734965a25a4a5ab4269782c49c9bda);
-            
+
 
             circle_marker_b0070e7460df40a4b996f7fc5c006d8e.bindPopup(popup_4d1bb5c9408f44fa866c8c838ae6a2ba);
 
-            
-        
-    
+
+
+
             var circle_marker_f484d4ccbbbc45f589378313ef2c1345 = L.circleMarker(
                 [42.33234,-71.05181],
                 {
@@ -3876,20 +3879,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_7a972b02baeb48ab88b8001efde077ee = L.popup({maxWidth: '300'});
 
-            
+
                 var html_8b3df90d4be84fa6ab5f26ff4916de21 = $('<div id="html_8b3df90d4be84fa6ab5f26ff4916de21" style="width: 100.0%; height: 100.0%;">UP Academy Charter School of Boston (District): UP Academy Charter School of Boston (Percent Staff Members of Color: 27.3% | School Leader of Color? True)</div>')[0];
                 popup_7a972b02baeb48ab88b8001efde077ee.setContent(html_8b3df90d4be84fa6ab5f26ff4916de21);
-            
+
 
             circle_marker_f484d4ccbbbc45f589378313ef2c1345.bindPopup(popup_7a972b02baeb48ab88b8001efde077ee);
 
-            
-        
-    
+
+
+
             var circle_marker_bf4bec2364e34d9786aec34be6541d4d = L.circleMarker(
                 [42.36864,-71.03436],
                 {
@@ -3909,20 +3912,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_1ca3e260448b4fa28b29094b81943ba3 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_2e573f4010654219b9d50e476c7d4925 = $('<div id="html_2e573f4010654219b9d50e476c7d4925" style="width: 100.0%; height: 100.0%;">Boston: Donald Mckay (Percent Staff Members of Color: 28.4% | School Leader of Color? True)</div>')[0];
                 popup_1ca3e260448b4fa28b29094b81943ba3.setContent(html_2e573f4010654219b9d50e476c7d4925);
-            
+
 
             circle_marker_bf4bec2364e34d9786aec34be6541d4d.bindPopup(popup_1ca3e260448b4fa28b29094b81943ba3);
 
-            
-        
-    
+
+
+
             var circle_marker_1f91caf7c0ad4ef589686c21562c4e4c = L.circleMarker(
                 [42.378242,-71.038155],
                 {
@@ -3942,20 +3945,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d79c228c73ed460d9aa71461bccdaa56 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_9839d6e499414957bcdb5d0e5ccf9a50 = $('<div id="html_9839d6e499414957bcdb5d0e5ccf9a50" style="width: 100.0%; height: 100.0%;">Boston: Hugh Roe O&#39;Donnell (Percent Staff Members of Color: 40.0% | School Leader of Color? True)</div>')[0];
                 popup_d79c228c73ed460d9aa71461bccdaa56.setContent(html_9839d6e499414957bcdb5d0e5ccf9a50);
-            
+
 
             circle_marker_1f91caf7c0ad4ef589686c21562c4e4c.bindPopup(popup_d79c228c73ed460d9aa71461bccdaa56);
 
-            
-        
-    
+
+
+
             var circle_marker_80d0c1d5fc73451a9795f5ccaaf34322 = L.circleMarker(
                 [42.37861,-71.031],
                 {
@@ -3975,20 +3978,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_ef26caacbe4743a78099e8a3e086d95a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_e8cd8a5dfbce482baeb9519f8977a9cf = $('<div id="html_e8cd8a5dfbce482baeb9519f8977a9cf" style="width: 100.0%; height: 100.0%;">Boston: Patrick J Kennedy (Percent Staff Members of Color: 34.8% | School Leader of Color? True)</div>')[0];
                 popup_ef26caacbe4743a78099e8a3e086d95a.setContent(html_e8cd8a5dfbce482baeb9519f8977a9cf);
-            
+
 
             circle_marker_80d0c1d5fc73451a9795f5ccaaf34322.bindPopup(popup_ef26caacbe4743a78099e8a3e086d95a);
 
-            
-        
-    
+
+
+
             var circle_marker_613689b41cff494e8c9c6865af72c540 = L.circleMarker(
                 [42.378098,-71.03999],
                 {
@@ -4008,20 +4011,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_3938a6482ee34c24a392ff6a7507de48 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_2daac8810f8947db8237d4f9047fe3f0 = $('<div id="html_2daac8810f8947db8237d4f9047fe3f0" style="width: 100.0%; height: 100.0%;">Boston: Mario Umana Academy (Percent Staff Members of Color: 37.1% | School Leader of Color? True)</div>')[0];
                 popup_3938a6482ee34c24a392ff6a7507de48.setContent(html_2daac8810f8947db8237d4f9047fe3f0);
-            
+
 
             circle_marker_613689b41cff494e8c9c6865af72c540.bindPopup(popup_3938a6482ee34c24a392ff6a7507de48);
 
-            
-        
-    
+
+
+
             var circle_marker_e99cc4ed356b49f79978a3894e28a846 = L.circleMarker(
                 [42.38055,-71.061035],
                 {
@@ -4041,20 +4044,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_7130a8d192c94c88a9e49c0e4e9d3531 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_2a72621d32f2421e91520fa69d66dc5f = $('<div id="html_2a72621d32f2421e91520fa69d66dc5f" style="width: 100.0%; height: 100.0%;">Boston: Charlestown High (Percent Staff Members of Color: 44.4% | School Leader of Color? True)</div>')[0];
                 popup_7130a8d192c94c88a9e49c0e4e9d3531.setContent(html_2a72621d32f2421e91520fa69d66dc5f);
-            
+
 
             circle_marker_e99cc4ed356b49f79978a3894e28a846.bindPopup(popup_7130a8d192c94c88a9e49c0e4e9d3531);
 
-            
-        
-    
+
+
+
             var circle_marker_595017b0af6d46c2b7fb6adc86a2751c = L.circleMarker(
                 [42.37933,-71.06669],
                 {
@@ -4074,20 +4077,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_ea8d4d7644ff4647bba641c54b7afb51 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_5f9d7178a30048b2b3990d04922da960 = $('<div id="html_5f9d7178a30048b2b3990d04922da960" style="width: 100.0%; height: 100.0%;">Boston: Clarence R Edwards Middle (Percent Staff Members of Color: 40.0% | School Leader of Color? False)</div>')[0];
                 popup_ea8d4d7644ff4647bba641c54b7afb51.setContent(html_5f9d7178a30048b2b3990d04922da960);
-            
+
 
             circle_marker_595017b0af6d46c2b7fb6adc86a2751c.bindPopup(popup_ea8d4d7644ff4647bba641c54b7afb51);
 
-            
-        
-    
+
+
+
             var circle_marker_e06c609130a9455d9bcd5ebba11cdc1f = L.circleMarker(
                 [42.37692,-71.057045],
                 {
@@ -4107,20 +4110,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_f614f187291546fea3f7e5953f9a9fba = L.popup({maxWidth: '300'});
 
-            
+
                 var html_166cc3221e0a49c38382a5ab75433c37 = $('<div id="html_166cc3221e0a49c38382a5ab75433c37" style="width: 100.0%; height: 100.0%;">Boston: Harvard-Kent (Percent Staff Members of Color: 38.2% | School Leader of Color? False)</div>')[0];
                 popup_f614f187291546fea3f7e5953f9a9fba.setContent(html_166cc3221e0a49c38382a5ab75433c37);
-            
+
 
             circle_marker_e06c609130a9455d9bcd5ebba11cdc1f.bindPopup(popup_f614f187291546fea3f7e5953f9a9fba);
 
-            
-        
-    
+
+
+
             var circle_marker_ca2e2ad27dc148c39380b241219e06e8 = L.circleMarker(
                 [42.326534,-71.106606],
                 {
@@ -4140,20 +4143,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d830db5fc1264b1e9cafcdd885ef8a49 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d42379d7ba8148fe90f46dd24ffdf36d = $('<div id="html_d42379d7ba8148fe90f46dd24ffdf36d" style="width: 100.0%; height: 100.0%;">Boston: ELC - West Zone (Percent Staff Members of Color: 43.6% | School Leader of Color? False)</div>')[0];
                 popup_d830db5fc1264b1e9cafcdd885ef8a49.setContent(html_d42379d7ba8148fe90f46dd24ffdf36d);
-            
+
 
             circle_marker_ca2e2ad27dc148c39380b241219e06e8.bindPopup(popup_d830db5fc1264b1e9cafcdd885ef8a49);
 
-            
-        
-    
+
+
+
             var circle_marker_967f78a77bfc496f91c0dde5c2aba49e = L.circleMarker(
                 [42.326534,-71.106606],
                 {
@@ -4173,20 +4176,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c92b7c178351400dbbcc9ae95a07ad43 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a98c0512134742a48be7a28d7356b423 = $('<div id="html_a98c0512134742a48be7a28d7356b423" style="width: 100.0%; height: 100.0%;">Boston: James W Hennigan (Percent Staff Members of Color: 57.7% | School Leader of Color? True)</div>')[0];
                 popup_c92b7c178351400dbbcc9ae95a07ad43.setContent(html_a98c0512134742a48be7a28d7356b423);
-            
+
 
             circle_marker_967f78a77bfc496f91c0dde5c2aba49e.bindPopup(popup_c92b7c178351400dbbcc9ae95a07ad43);
 
-            
-        
-    
+
+
+
             var circle_marker_bed94fc13c7b4c1e9a77d14d0d17646f = L.circleMarker(
                 [42.321957,-71.10617],
                 {
@@ -4206,20 +4209,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c066e47d4d0a45cc81ac3cd5545cb83e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_b7d5665c05e34511851ae16dbcd98506 = $('<div id="html_b7d5665c05e34511851ae16dbcd98506" style="width: 100.0%; height: 100.0%;">Boston: John F Kennedy (Percent Staff Members of Color: 57.0% | School Leader of Color? True)</div>')[0];
                 popup_c066e47d4d0a45cc81ac3cd5545cb83e.setContent(html_b7d5665c05e34511851ae16dbcd98506);
-            
+
 
             circle_marker_bed94fc13c7b4c1e9a77d14d0d17646f.bindPopup(popup_c066e47d4d0a45cc81ac3cd5545cb83e);
 
-            
-        
-    
+
+
+
             var circle_marker_eaa7a834937f42b38374ccb2ff35a955 = L.circleMarker(
                 [42.306053,-71.11023],
                 {
@@ -4239,20 +4242,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_9a1ea364419e49b988e6345080dd0cfd = L.popup({maxWidth: '300'});
 
-            
+
                 var html_d7f394832994415bb4ee7bc76994ba70 = $('<div id="html_d7f394832994415bb4ee7bc76994ba70" style="width: 100.0%; height: 100.0%;">Boston: The English High (Percent Staff Members of Color: 52.7% | School Leader of Color? True)</div>')[0];
                 popup_9a1ea364419e49b988e6345080dd0cfd.setContent(html_d7f394832994415bb4ee7bc76994ba70);
-            
+
 
             circle_marker_eaa7a834937f42b38374ccb2ff35a955.bindPopup(popup_9a1ea364419e49b988e6345080dd0cfd);
 
-            
-        
-    
+
+
+
             var circle_marker_5f6ed6f83faa47a481bd4e861805de09 = L.circleMarker(
                 [42.306736,-71.11445],
                 {
@@ -4272,20 +4275,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_cf81438fe0164d11b5d2c0ffd9decd0d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_fcbad24a439a424eb8d4048f1d3cb873 = $('<div id="html_fcbad24a439a424eb8d4048f1d3cb873" style="width: 100.0%; height: 100.0%;">Boston: Margarita Muniz Academy (Percent Staff Members of Color: 66.5% | School Leader of Color? 0)</div>')[0];
                 popup_cf81438fe0164d11b5d2c0ffd9decd0d.setContent(html_fcbad24a439a424eb8d4048f1d3cb873);
-            
+
 
             circle_marker_5f6ed6f83faa47a481bd4e861805de09.bindPopup(popup_cf81438fe0164d11b5d2c0ffd9decd0d);
 
-            
-        
-    
+
+
+
             var circle_marker_84d7c74df361417ab72227b167fa1798 = L.circleMarker(
                 [42.286915,-71.12708],
                 {
@@ -4305,20 +4308,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_5fc296c0938042a582c6bb48aab7ae68 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_741ffaf6336047728f60fd1d687fc7fd = $('<div id="html_741ffaf6336047728f60fd1d687fc7fd" style="width: 100.0%; height: 100.0%;">Boston: Charles Sumner (Percent Staff Members of Color: 43.4% | School Leader of Color? False)</div>')[0];
                 popup_5fc296c0938042a582c6bb48aab7ae68.setContent(html_741ffaf6336047728f60fd1d687fc7fd);
-            
+
 
             circle_marker_84d7c74df361417ab72227b167fa1798.bindPopup(popup_5fc296c0938042a582c6bb48aab7ae68);
 
-            
-        
-    
+
+
+
             var circle_marker_c33b43e4656e48ea9a061a60ce2e9b5c = L.circleMarker(
                 [42.28395,-71.12455],
                 {
@@ -4338,20 +4341,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_451232b99aeb48be8fae9e48bf114043 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_853b66dbe53340bdb59db9303faf6c5e = $('<div id="html_853b66dbe53340bdb59db9303faf6c5e" style="width: 100.0%; height: 100.0%;">Boston: Washington Irving Middle (Percent Staff Members of Color: 50.9% | School Leader of Color? 0)</div>')[0];
                 popup_451232b99aeb48be8fae9e48bf114043.setContent(html_853b66dbe53340bdb59db9303faf6c5e);
-            
+
 
             circle_marker_c33b43e4656e48ea9a061a60ce2e9b5c.bindPopup(popup_451232b99aeb48be8fae9e48bf114043);
 
-            
-        
-    
+
+
+
             var circle_marker_7639d1d5f1664eb68f9f4d08e1642cb6 = L.circleMarker(
                 [42.282608,-71.12363],
                 {
@@ -4371,20 +4374,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_eb4ca926053d43b1921445b4603148ac = L.popup({maxWidth: '300'});
 
-            
+
                 var html_9ae1eeda57f24d3b87ef6cbddab8b468 = $('<div id="html_9ae1eeda57f24d3b87ef6cbddab8b468" style="width: 100.0%; height: 100.0%;">Brooke Charter School (District): Brooke Charter School (Percent Staff Members of Color: 21.7% | School Leader of Color? True)</div>')[0];
                 popup_eb4ca926053d43b1921445b4603148ac.setContent(html_9ae1eeda57f24d3b87ef6cbddab8b468);
-            
+
 
             circle_marker_7639d1d5f1664eb68f9f4d08e1642cb6.bindPopup(popup_eb4ca926053d43b1921445b4603148ac);
 
-            
-        
-    
+
+
+
             var circle_marker_dbdfe4595ebe4c6baeeba6bf74b072a7 = L.circleMarker(
                 [42.2854,-71.17303],
                 {
@@ -4404,20 +4407,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_a8f8f1440d1b4e3faed9de31b82a90c6 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_ad0d6fb83b0c48edb5783e6058a23e71 = $('<div id="html_ad0d6fb83b0c48edb5783e6058a23e71" style="width: 100.0%; height: 100.0%;">Boston: Urban Science Academy (Percent Staff Members of Color: 47.3% | School Leader of Color? False)</div>')[0];
                 popup_a8f8f1440d1b4e3faed9de31b82a90c6.setContent(html_ad0d6fb83b0c48edb5783e6058a23e71);
-            
+
 
             circle_marker_dbdfe4595ebe4c6baeeba6bf74b072a7.bindPopup(popup_a8f8f1440d1b4e3faed9de31b82a90c6);
 
-            
-        
-    
+
+
+
             var circle_marker_e4ec97fd6519471a8992387b154ad2db = L.circleMarker(
                 [42.35252,-71.13729],
                 {
@@ -4437,20 +4440,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_296b24ea597a4348add0e92dc65b5210 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_1f84dd815ca047f3a428b348707b5593 = $('<div id="html_1f84dd815ca047f3a428b348707b5593" style="width: 100.0%; height: 100.0%;">Boston: Jackson Mann (Percent Staff Members of Color: 45.8% | School Leader of Color? True)</div>')[0];
                 popup_296b24ea597a4348add0e92dc65b5210.setContent(html_1f84dd815ca047f3a428b348707b5593);
-            
+
 
             circle_marker_e4ec97fd6519471a8992387b154ad2db.bindPopup(popup_296b24ea597a4348add0e92dc65b5210);
 
-            
-        
-    
+
+
+
             var circle_marker_ee345492bdf24b0096b24b4369dadc5c = L.circleMarker(
                 [42.34992,-71.14561],
                 {
@@ -4470,20 +4473,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_8afa504c21634fbf825617491de5d69e = L.popup({maxWidth: '300'});
 
-            
+
                 var html_3c829dfefc9f4d988b1e25624ba39038 = $('<div id="html_3c829dfefc9f4d988b1e25624ba39038" style="width: 100.0%; height: 100.0%;">Boston: Brighton High (Percent Staff Members of Color: 37.1% | School Leader of Color? True)</div>')[0];
                 popup_8afa504c21634fbf825617491de5d69e.setContent(html_3c829dfefc9f4d988b1e25624ba39038);
-            
+
 
             circle_marker_ee345492bdf24b0096b24b4369dadc5c.bindPopup(popup_8afa504c21634fbf825617491de5d69e);
 
-            
-        
-    
+
+
+
             var circle_marker_2c612a4cd14040019cf0d01e022a5ed3 = L.circleMarker(
                 [42.349823,-71.14486],
                 {
@@ -4503,20 +4506,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_a75c50a88b2147eca43036f1f29907ed = L.popup({maxWidth: '300'});
 
-            
+
                 var html_968b1a9f3b0544bb83d32524e908f16f = $('<div id="html_968b1a9f3b0544bb83d32524e908f16f" style="width: 100.0%; height: 100.0%;">Boston Green Academy Horace Mann Charter School (District): Boston Green Academy Horace Mann Charter School (Percent Staff Members of Color: 41.6% | School Leader of Color? True)</div>')[0];
                 popup_a75c50a88b2147eca43036f1f29907ed.setContent(html_968b1a9f3b0544bb83d32524e908f16f);
-            
+
 
             circle_marker_2c612a4cd14040019cf0d01e022a5ed3.bindPopup(popup_a75c50a88b2147eca43036f1f29907ed);
 
-            
-        
-    
+
+
+
             var circle_marker_65d3e1b622554607b39ff50dbe26888a = L.circleMarker(
                 [42.265385,-71.1181],
                 {
@@ -4536,20 +4539,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_e3d62e8d41254f7592381bc0d8a0a5fe = L.popup({maxWidth: '300'});
 
-            
+
                 var html_5df27d89f2d54703a009c8593b4fa01f = $('<div id="html_5df27d89f2d54703a009c8593b4fa01f" style="width: 100.0%; height: 100.0%;">Boston: Another Course To College (Percent Staff Members of Color: 46.6% | School Leader of Color? 0)</div>')[0];
                 popup_e3d62e8d41254f7592381bc0d8a0a5fe.setContent(html_5df27d89f2d54703a009c8593b4fa01f);
-            
+
 
             circle_marker_65d3e1b622554607b39ff50dbe26888a.bindPopup(popup_e3d62e8d41254f7592381bc0d8a0a5fe);
 
-            
-        
-    
+
+
+
             var circle_marker_f21b9583091d4f45b02122eae4ed9676 = L.circleMarker(
                 [42.257145,-71.12682],
                 {
@@ -4569,20 +4572,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_815e73991af14020ba5957eca76af687 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_2486f65a9b0c4dacb431505f725203f1 = $('<div id="html_2486f65a9b0c4dacb431505f725203f1" style="width: 100.0%; height: 100.0%;">Boston: Henry Grew (Percent Staff Members of Color: 43.9% | School Leader of Color? True)</div>')[0];
                 popup_815e73991af14020ba5957eca76af687.setContent(html_2486f65a9b0c4dacb431505f725203f1);
-            
+
 
             circle_marker_f21b9583091d4f45b02122eae4ed9676.bindPopup(popup_815e73991af14020ba5957eca76af687);
 
-            
-        
-    
+
+
+
             var circle_marker_a675f1d194874311b0a5f8615a4bfe70 = L.circleMarker(
                 [42.25125,-71.133095],
                 {
@@ -4602,20 +4605,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_baed233cde3b4178baf3759263dd203d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_08c2ffe125044731a6d276e24246927c = $('<div id="html_08c2ffe125044731a6d276e24246927c" style="width: 100.0%; height: 100.0%;">Boston: William Ellery Channing (Percent Staff Members of Color: 50.6% | School Leader of Color? True)</div>')[0];
                 popup_baed233cde3b4178baf3759263dd203d.setContent(html_08c2ffe125044731a6d276e24246927c);
-            
+
 
             circle_marker_a675f1d194874311b0a5f8615a4bfe70.bindPopup(popup_baed233cde3b4178baf3759263dd203d);
 
-            
-        
-    
+
+
+
             var circle_marker_7f3b0dca348b496dbdab8a9f4f5fc29c = L.circleMarker(
                 [42.262005,-71.10949],
                 {
@@ -4635,20 +4638,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_04531797fa624ec9af77d6967174f16c = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a2b13c27eefb40e19c7008dbaf943e5b = $('<div id="html_a2b13c27eefb40e19c7008dbaf943e5b" style="width: 100.0%; height: 100.0%;">Boston Preparatory Charter Public (District): Boston Preparatory Charter Public School (Percent Staff Members of Color: 30.0% | School Leader of Color? True)</div>')[0];
                 popup_04531797fa624ec9af77d6967174f16c.setContent(html_a2b13c27eefb40e19c7008dbaf943e5b);
-            
+
 
             circle_marker_7f3b0dca348b496dbdab8a9f4f5fc29c.bindPopup(popup_04531797fa624ec9af77d6967174f16c);
 
-            
-        
-    
+
+
+
             var circle_marker_0c7c174178c148ccaa311ed5fafe58b7 = L.circleMarker(
                 [42.250435,-71.126045],
                 {
@@ -4668,20 +4671,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_f174ccb933c74befb647f1b9edd34e17 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_6e513c186c2c41199ee575d8fa92b67a = $('<div id="html_6e513c186c2c41199ee575d8fa92b67a" style="width: 100.0%; height: 100.0%;">Boston Renaissance Charter Public (District): Boston Renaissance Charter Public School (Percent Staff Members of Color: 33.5% | School Leader of Color? True)</div>')[0];
                 popup_f174ccb933c74befb647f1b9edd34e17.setContent(html_6e513c186c2c41199ee575d8fa92b67a);
-            
+
 
             circle_marker_0c7c174178c148ccaa311ed5fafe58b7.bindPopup(popup_f174ccb933c74befb647f1b9edd34e17);
 
-            
-        
-    
+
+
+
             var circle_marker_46419601645d451c8c0d8fc3d82725d4 = L.circleMarker(
                 [42.39179,-71.13098],
                 {
@@ -4701,20 +4704,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_1a60e8662b814fc7bf808c9fe53ea55b = L.popup({maxWidth: '300'});
 
-            
+
                 var html_5b32454126c843d9851f9bd9c912dbd9 = $('<div id="html_5b32454126c843d9851f9bd9c912dbd9" style="width: 100.0%; height: 100.0%;">Benjamin Banneker Charter Public (District): Benjamin Banneker Charter Public School (Percent Staff Members of Color: 46.4% | School Leader of Color? True)</div>')[0];
                 popup_1a60e8662b814fc7bf808c9fe53ea55b.setContent(html_5b32454126c843d9851f9bd9c912dbd9);
-            
+
 
             circle_marker_46419601645d451c8c0d8fc3d82725d4.bindPopup(popup_1a60e8662b814fc7bf808c9fe53ea55b);
 
-            
-        
-    
+
+
+
             var circle_marker_512864c856bb4a0fa87db2d119872a42 = L.circleMarker(
                 [42.367443,-71.084625],
                 {
@@ -4734,20 +4737,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_e8675ce159b0472e9fbb40155f2fbd33 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_6dd849e71ba94d2c990088bb4387e17a = $('<div id="html_6dd849e71ba94d2c990088bb4387e17a" style="width: 100.0%; height: 100.0%;">Community Charter School of Cambridge (District): Community Charter School of Cambridge (Percent Staff Members of Color: 29.4% | School Leader of Color? False)</div>')[0];
                 popup_e8675ce159b0472e9fbb40155f2fbd33.setContent(html_6dd849e71ba94d2c990088bb4387e17a);
-            
+
 
             circle_marker_512864c856bb4a0fa87db2d119872a42.bindPopup(popup_e8675ce159b0472e9fbb40155f2fbd33);
 
-            
-        
-    
+
+
+
             var circle_marker_12fd181b058847f3ad1486193e5155e4 = L.circleMarker(
                 [42.40032,-71.041084],
                 {
@@ -4767,20 +4770,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_4d0309f6b3184dcfb8ac4e91302fcd3d = L.popup({maxWidth: '300'});
 
-            
+
                 var html_afbd32ae5b52441984026987ecb9fc52 = $('<div id="html_afbd32ae5b52441984026987ecb9fc52" style="width: 100.0%; height: 100.0%;">Chelsea: Chelsea High (Percent Staff Members of Color: 21.9% | School Leader of Color? True)</div>')[0];
                 popup_4d0309f6b3184dcfb8ac4e91302fcd3d.setContent(html_afbd32ae5b52441984026987ecb9fc52);
-            
+
 
             circle_marker_12fd181b058847f3ad1486193e5155e4.bindPopup(popup_4d0309f6b3184dcfb8ac4e91302fcd3d);
 
-            
-        
-    
+
+
+
             var circle_marker_299eee80178a466b810f2f57876715c6 = L.circleMarker(
                 [42.395836,-71.03032],
                 {
@@ -4800,20 +4803,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_ee85ef64344e461d9af9c04052e00bdd = L.popup({maxWidth: '300'});
 
-            
+
                 var html_95c822a693a04ee1ac37fb0e37c06d50 = $('<div id="html_95c822a693a04ee1ac37fb0e37c06d50" style="width: 100.0%; height: 100.0%;">Chelsea: Clark Avenue School (Percent Staff Members of Color: 8.5% | School Leader of Color? False)</div>')[0];
                 popup_ee85ef64344e461d9af9c04052e00bdd.setContent(html_95c822a693a04ee1ac37fb0e37c06d50);
-            
+
 
             circle_marker_299eee80178a466b810f2f57876715c6.bindPopup(popup_ee85ef64344e461d9af9c04052e00bdd);
 
-            
-        
-    
+
+
+
             var circle_marker_7a0bf9d3575b40e98ca283503657ec02 = L.circleMarker(
                 [42.397854,-71.02066],
                 {
@@ -4833,20 +4836,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d08a84fc2ae6427da3c71403ea0f984a = L.popup({maxWidth: '300'});
 
-            
+
                 var html_1ab6d6edb40440ed9e459130b4801800 = $('<div id="html_1ab6d6edb40440ed9e459130b4801800" style="width: 100.0%; height: 100.0%;">Chelsea: Edgar A Hooks Elementary (Percent Staff Members of Color: 15.8% | School Leader of Color? False)</div>')[0];
                 popup_d08a84fc2ae6427da3c71403ea0f984a.setContent(html_1ab6d6edb40440ed9e459130b4801800);
-            
+
 
             circle_marker_7a0bf9d3575b40e98ca283503657ec02.bindPopup(popup_d08a84fc2ae6427da3c71403ea0f984a);
 
-            
-        
-    
+
+
+
             var circle_marker_73d75727a13142e59d6bfc7e7fbbd053 = L.circleMarker(
                 [42.393448,-71.036835],
                 {
@@ -4866,20 +4869,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_cc7733abf887424890744aa9f5c4c9ac = L.popup({maxWidth: '300'});
 
-            
+
                 var html_973adcfbc7fc4587a305abea75aa2f49 = $('<div id="html_973adcfbc7fc4587a305abea75aa2f49" style="width: 100.0%; height: 100.0%;">Chelsea: Eugene Wright Science and Technology Academy (Percent Staff Members of Color: 14.1% | School Leader of Color? False)</div>')[0];
                 popup_cc7733abf887424890744aa9f5c4c9ac.setContent(html_973adcfbc7fc4587a305abea75aa2f49);
-            
+
 
             circle_marker_73d75727a13142e59d6bfc7e7fbbd053.bindPopup(popup_cc7733abf887424890744aa9f5c4c9ac);
 
-            
-        
-    
+
+
+
             var circle_marker_5de5a078822a4183af157902ade50227 = L.circleMarker(
                 [42.397854,-71.02066],
                 {
@@ -4899,20 +4902,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_33015e8b5fe24edbb7dcb2cfe88db984 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_e09e39cbc19945f09e9fb4165ffd9452 = $('<div id="html_e09e39cbc19945f09e9fb4165ffd9452" style="width: 100.0%; height: 100.0%;">Chelsea: Frank M Sokolowski Elementary (Percent Staff Members of Color: 19.4% | School Leader of Color? True)</div>')[0];
                 popup_33015e8b5fe24edbb7dcb2cfe88db984.setContent(html_e09e39cbc19945f09e9fb4165ffd9452);
-            
+
 
             circle_marker_5de5a078822a4183af157902ade50227.bindPopup(popup_33015e8b5fe24edbb7dcb2cfe88db984);
 
-            
-        
-    
+
+
+
             var circle_marker_8958e26c545443c28ab549a6876083ca = L.circleMarker(
                 [42.397854,-71.02066],
                 {
@@ -4932,20 +4935,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_d6d4cc750cfe447eb6d56f90958f400c = L.popup({maxWidth: '300'});
 
-            
+
                 var html_68144e57528447059a27e1b6fcd45834 = $('<div id="html_68144e57528447059a27e1b6fcd45834" style="width: 100.0%; height: 100.0%;">Chelsea: George F. Kelly Elementary (Percent Staff Members of Color: 19.1% | School Leader of Color? True)</div>')[0];
                 popup_d6d4cc750cfe447eb6d56f90958f400c.setContent(html_68144e57528447059a27e1b6fcd45834);
-            
+
 
             circle_marker_8958e26c545443c28ab549a6876083ca.bindPopup(popup_d6d4cc750cfe447eb6d56f90958f400c);
 
-            
-        
-    
+
+
+
             var circle_marker_1c07a53f48074e7cb5e714260a9d63a7 = L.circleMarker(
                 [42.393448,-71.036835],
                 {
@@ -4965,20 +4968,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_70f6b1637dd0468289803bfafbd64f45 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_c7e7680ecef34e019b1e11d16ef62cb5 = $('<div id="html_c7e7680ecef34e019b1e11d16ef62cb5" style="width: 100.0%; height: 100.0%;">Chelsea: Joseph A. Browne School (Percent Staff Members of Color: 20.6% | School Leader of Color? False)</div>')[0];
                 popup_70f6b1637dd0468289803bfafbd64f45.setContent(html_c7e7680ecef34e019b1e11d16ef62cb5);
-            
+
 
             circle_marker_1c07a53f48074e7cb5e714260a9d63a7.bindPopup(popup_70f6b1637dd0468289803bfafbd64f45);
 
-            
-        
-    
+
+
+
             var circle_marker_3057c140aa814488b3f54ba8f4de30f8 = L.circleMarker(
                 [42.392326,-71.03432],
                 {
@@ -4998,20 +5001,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_ac6f4130d511462b85ac0d259d9395e9 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_37690ac121fb4851a0447dd3b5957efe = $('<div id="html_37690ac121fb4851a0447dd3b5957efe" style="width: 100.0%; height: 100.0%;">Phoenix Charter Academy (District): Phoenix Charter Academy (Percent Staff Members of Color: 33.5% | School Leader of Color? True)</div>')[0];
                 popup_ac6f4130d511462b85ac0d259d9395e9.setContent(html_37690ac121fb4851a0447dd3b5957efe);
-            
+
 
             circle_marker_3057c140aa814488b3f54ba8f4de30f8.bindPopup(popup_ac6f4130d511462b85ac0d259d9395e9);
 
-            
-        
-    
+
+
+
             var circle_marker_22df30217b7f4c528a1d3ce0229459cc = L.circleMarker(
                 [42.351852,-71.12106],
                 {
@@ -5031,20 +5034,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_2802db87625c4124b08a72adeb77e697 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_a5f94dd26acd43bd9b6689a7b1e4f52c = $('<div id="html_a5f94dd26acd43bd9b6689a7b1e4f52c" style="width: 100.0%; height: 100.0%;">MATCH Charter Public School (District): MATCH Charter Public School (Percent Staff Members of Color: 36.6% | School Leader of Color? True)</div>')[0];
                 popup_2802db87625c4124b08a72adeb77e697.setContent(html_a5f94dd26acd43bd9b6689a7b1e4f52c);
-            
+
 
             circle_marker_22df30217b7f4c528a1d3ce0229459cc.bindPopup(popup_2802db87625c4124b08a72adeb77e697);
 
-            
-        
-    
+
+
+
             var circle_marker_c87f848252084562ac171864eb821c72 = L.circleMarker(
                 [42.102753,-71.03043],
                 {
@@ -5064,20 +5067,20 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_c5f0f2ffdc274c3aa118a4c5ef3a4797 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_c7e485bc585940a4b98884bec8687e87 = $('<div id="html_c7e485bc585940a4b98884bec8687e87" style="width: 100.0%; height: 100.0%;">Brockton: Oscar F Raymond (Percent Staff Members of Color: 16.7% | School Leader of Color? False)</div>')[0];
                 popup_c5f0f2ffdc274c3aa118a4c5ef3a4797.setContent(html_c7e485bc585940a4b98884bec8687e87);
-            
+
 
             circle_marker_c87f848252084562ac171864eb821c72.bindPopup(popup_c5f0f2ffdc274c3aa118a4c5ef3a4797);
 
-            
-        
-    
+
+
+
             var circle_marker_74e2ef613b154136aafd41d768261325 = L.circleMarker(
                 [42.06664,-71.013695],
                 {
@@ -5097,17 +5100,17 @@
   "weight": 3
 }
                 ).addTo(map_20fbb25887674e26879b8219e0cf3e49);
-            
-    
+
+
             var popup_424c42ae37344db8999009b78296bd52 = L.popup({maxWidth: '300'});
 
-            
+
                 var html_faf0597a1bac4f10a767c840a9390d28 = $('<div id="html_faf0597a1bac4f10a767c840a9390d28" style="width: 100.0%; height: 100.0%;">Brockton: Gilmore Elementary School (Percent Staff Members of Color: 14.9% | School Leader of Color? False)</div>')[0];
                 popup_424c42ae37344db8999009b78296bd52.setContent(html_faf0597a1bac4f10a767c840a9390d28);
-            
+
 
             circle_marker_74e2ef613b154136aafd41d768261325.bindPopup(popup_424c42ae37344db8999009b78296bd52);
 
-            
-        
+
+
 </script>
